@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+remote_url="https://github.com/QuickWorkInc/adr-seminar-bdr.git"
+
+if ! git remote get-url origin >/dev/null 2>&1; then
+  git remote add origin "$remote_url"
+else
+  git remote set-url origin "$remote_url"
+fi
+
+branch="$(git branch --show-current)"
+if [[ "$branch" != "main" ]]; then
+  exit 0
+fi
+
+bash scripts/validate-repo.sh
+if ! git push -u origin HEAD:main; then
+  echo "GitHub sync failed. Run: bash scripts/sync-to-github.sh" >&2
+  exit 1
+fi
