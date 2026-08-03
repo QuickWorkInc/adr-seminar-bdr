@@ -1,0 +1,21 @@
+{
+  "to": {
+    "email": "recipient@example.invalid",
+    "name": "ご担当者様"
+  },
+  "subject": "【ご案内】企業固有の課題に接続したセミナー名",
+  "text": "企業固有の冒頭フックを記載します。\n\nセミナー内容との接続、経営ベネフィット、P/Lインパクト、参加で得られる示唆、申込CTAを記載します。",
+  "metadata": {
+    "campaignId": "YYYYMMDD_topic_name",
+    "companySlug": "company-name",
+    "recipientRole": "対象者の役職",
+    "personalizationEvidence": "対象企業の公式情報を根拠にした、企業固有の文脈を記載します。",
+    "businessImpact": "売上、粗利、CAC、商談創出、工数削減などの事業インパクト仮説を記載します。",
+    "sourceReferences": [
+      "https://example.com/company-source"
+    ],
+    "reviewApproved": true,
+    "suppressionChecked": true,
+    "suppressionCheckedAt": "2026-08-03T00:00:00+09:00"
+  }
+}
