@@ -86,8 +86,11 @@
 | 三菱長崎機工株式会社 | 1310001002161 | webmaster@mnm.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 012） |
 | 株式会社旭製作所 | 1330001018362 | info@agi.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 012） |
 | 東京窯業株式会社 | 2010001023781 | info@tyk.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 012） |
+| 株式会社阪上製作所 | 2010601011500 | eigyo@sakagami-ltd.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 013） |
+| 株式会社うおいち | 1120001118638 | info@uoichi.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 013） |
+| 株式会社翻訳センター | 1120001089458 | info@honyakuctr.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 013） |
 
-メール送信済み53社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生し、実配送は11件。詳細と恒久対策は `sendgrid-duplicate-incident-20260804.md` を参照。
+メール送信済み56社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生し、実配送は11件。詳細と恒久対策は `sendgrid-duplicate-incident-20260804.md` を参照。
 
 ## フォーム未送信
 
@@ -111,4 +114,4 @@
 - 太平ビルサービス株式会社: 「お仕事や採用以外」の一般問い合わせフォームから送信し、`/contact/comp_etc.html` の完了画面を確認。公式ページに営業利用禁止の明示なし。
 - TISI株式会社: 公式の一般問い合わせフォームから送信し、`/contact/complete.php` の「問い合わせ完了」画面を確認。Redashの営業禁止・連絡先NGフラグはいずれも無効で、公式ページにも営業利用禁止の明示なし。
 
-メール送信済み53社、フォーム送信済み5社、ユニーク合計58社。
+メール送信済み56社、フォーム送信済み5社、ユニーク合計61社。
