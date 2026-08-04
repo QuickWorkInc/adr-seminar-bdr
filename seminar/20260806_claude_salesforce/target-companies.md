@@ -71,8 +71,11 @@
 | 興人フィルム＆ケミカルズ株式会社 | 1010001147706 | information_kjfc@kohjin.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 006） |
 | 平河ヒューテック株式会社 | 1010701008364 | soumu@hewtech.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 006） |
 | 岩瀬産業株式会社 | 1070001013126 | webmaster@iwase-net.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 006） |
+| タキゲン製造株式会社 | 1010701005766 | tokyo@takigen.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 007） |
+| セメダイン株式会社 | 1010701005270 | sodan@cemedine.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 007） |
+| 日本エア・リキード合同会社 | 1010401089977 | Webmaster-aljp@airliquide.com | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 007） |
 
-メール送信済み38社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生し、実配送は11件。詳細と恒久対策は `sendgrid-duplicate-incident-20260804.md` を参照。
+メール送信済み41社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生し、実配送は11件。詳細と恒久対策は `sendgrid-duplicate-incident-20260804.md` を参照。
 
 ## フォーム未送信
 
@@ -96,4 +99,4 @@
 - 太平ビルサービス株式会社: 「お仕事や採用以外」の一般問い合わせフォームから送信し、`/contact/comp_etc.html` の完了画面を確認。公式ページに営業利用禁止の明示なし。
 - TISI株式会社: 公式の一般問い合わせフォームから送信し、`/contact/complete.php` の「問い合わせ完了」画面を確認。Redashの営業禁止・連絡先NGフラグはいずれも無効で、公式ページにも営業利用禁止の明示なし。
 
-メール送信済み38社、フォーム送信済み5社、ユニーク合計43社。
+メール送信済み41社、フォーム送信済み5社、ユニーク合計46社。
