@@ -41,6 +41,14 @@ for path in README.md email/README.md contact/README.md sns/README.md seminar/RE
   done
 done
 
+while IFS= read -r dir; do
+  dir_name="$(basename "$dir")"
+  if [[ "$dir_name" =~ ^[0-9]{8}_.+ && "$dir" != ./seminar/* ]]; then
+    echo "seminar workspace directory must be under ./seminar only: $dir" >&2
+    exit 1
+  fi
+done < <(find . -path './.git' -prune -o -type d -print)
+
 validate_campaign() {
   local campaign_dir="$1"
   local brief_path="$campaign_dir/brief.md"
