@@ -117,8 +117,33 @@
 | ビソー工業株式会社 | 2030001007106 | info@bisokougyou.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
 | 光管財株式会社 | 3011801011339 | info@hikal.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
 | 株式会社ビルシステム | 3020001047911 | info@buil-system.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 富士ソフトサービスビューロ株式会社 | 1010601027646 | info@fsisb.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| ＴＤＣＸ　Ｊａｐａｎ株式会社 | 4010401128294 | japan@teledirectgroup.com | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| ＴＥＴＲＡＰＯＴ株式会社 | 5120001136363 | info@tetra-pot.com | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社不二家システムセンター | 6011701006832 | sales.info@fujiya-sc.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社ＫＲＬ | 1012401013421 | brain-info@krgroup.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 関西エアポートリテールサービス株式会社 | 2120101040897 | otoiawase@kaakix.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社宅配 | 3010001004665 | eigyou@takuhai-group.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社セントラルサービスシステム | 4010001116526 | info@css-ltd.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社ＬＩＸＩＬ　Ａｄｖａｎｃｅｄ　Ｓｈｏｗｒｏｏｍ | 5010401108015 | las_hpinfo@lixil.com | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| アクティオ株式会社 | 6013201000200 | info@actio.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社両毛ビジネスサポート | 6070001016776 | rbs-sales@ryomo.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 九州ビルサービス株式会社 | 7290001048656 | info@kyubil.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社フクシ・エンタープライズ | 9010601006031 | sports@fep0294.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社アサイン | 3010601050919 | info@a-ssign.com | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社ジョブコム | 3180001043705 | info@jobcom.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社フェローズ | 5011001040112 | info@fellow-s.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| ロバート・ウォルターズ・ジャパン株式会社 | 7011001036918 | info@robertwalters.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社アイエスエイ | 7040001076442 | info@isa-net.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| ウイルフラップ株式会社 | 7220001010795 | info@frappu.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| ＳＢペイメントサービス株式会社 | 4010401058731 | sbps_bs@ps.softbank.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| ＪＢＣＣ株式会社 | 5010801022245 | jb_info@jbcc.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 株式会社カオナビ | 6011201014757 | info@kaonavi.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 京セラコミュニケーションシステム株式会社 | 6130001012562 | kythom@kccs.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| 日鉄ソリューションズサービスアンドテクノロジー株式会社 | 3010001092636 | iii-nsslc_info@jp.nssol.nssmc.com | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
+| コムシス情報システム株式会社 | 9010401081200 | general@mlb.comjo.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 016） |
 
-メール送信済み84社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生。Batch 015は日次枠回復後の自動再開を含め25社すべてaccepted。
+メール送信済み109社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生。Batch 015・016は中業界別文面で各25社すべてaccepted。
 
 ## フォーム未送信
 
@@ -142,4 +167,4 @@
 - 太平ビルサービス株式会社: 「お仕事や採用以外」の一般問い合わせフォームから送信し、`/contact/comp_etc.html` の完了画面を確認。公式ページに営業利用禁止の明示なし。
 - TISI株式会社: 公式の一般問い合わせフォームから送信し、`/contact/complete.php` の「問い合わせ完了」画面を確認。Redashの営業禁止・連絡先NGフラグはいずれも無効で、公式ページにも営業利用禁止の明示なし。
 
-メール送信済み84社、フォーム送信済み5社、ユニーク合計89社。
+メール送信済み109社、フォーム送信済み5社、ユニーク合計114社。
