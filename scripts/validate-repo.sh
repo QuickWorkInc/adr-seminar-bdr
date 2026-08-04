@@ -9,6 +9,7 @@ required_paths=(
   "seminar/20260804_claude_salesforce/README.md"
   "email/README.md"
   "contact/README.md"
+  "contact/form-profile.md"
   "sns/README.md"
   "docs/CHANGELOG.md"
   "scripts/check-sync-status.sh"
