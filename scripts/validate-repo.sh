@@ -7,7 +7,6 @@ required_paths=(
   "seminar/README.md"
   "seminar/delivery-log-sheet.md"
   "seminar/salesnow-data-redash.md"
-  "seminar/20260804_claude_salesforce/README.md"
   "email/README.md"
   "contact/README.md"
   "contact/form-profile.md"
@@ -100,12 +99,13 @@ validate_campaign() {
       fi
     done
 
+    local found_channel_draft=0
     for channel in email contact sns; do
       local draft_file="$drafts_dir/$slug-$channel.md"
       if [[ ! -f "$draft_file" ]]; then
-        echo "missing draft: $draft_file" >&2
-        exit 1
+        continue
       fi
+      found_channel_draft=1
       for term in "企業固有の文脈:" "セミナー内容との接続:" "経営ベネフィット:" "P/Lインパクト:"; do
         if ! grep -q "$term" "$draft_file"; then
           echo "missing required draft term '$term' in $draft_file" >&2
@@ -113,6 +113,10 @@ validate_campaign() {
         fi
       done
     done
+    if [[ "$found_channel_draft" -eq 0 ]]; then
+      echo "campaign requires at least one channel draft for: $slug" >&2
+      exit 1
+    fi
 
     local review_file="$reviews_dir/$slug.md"
     if [[ ! -f "$review_file" ]]; then

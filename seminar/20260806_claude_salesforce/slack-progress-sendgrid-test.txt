@@ -1,0 +1,8 @@
+SalesNowセミナー営業 進捗報告
+
+・SendGrid Sender Identity: tomoya-takeuchi@salesnow.jp / verified=true
+・本人宛て接続テスト: SendGrid HTTP 202 Accepted
+・テスト件名: [送信テスト] 8月6日セミナー営業 SendGrid接続確認
+・接続済みGmailでの受信確認: 該当なし（接続メールボックス相違の可能性あり）
+・営業対象への実送信: 0件
+・次の作業: Redash優先100社抽出、企業調査、メール・問い合わせフォーム特定、個社文面レビュー

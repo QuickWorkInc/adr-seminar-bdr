@@ -1,0 +1,35 @@
+{
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "tomoya-takeuchi@salesnow.jp",
+          "name": "竹内 智康"
+        }
+      ]
+    }
+  ],
+  "from": {
+    "email": "tomoya-takeuchi@salesnow.jp",
+    "name": "SalesNow 竹内智康"
+  },
+  "reply_to": {
+    "email": "tomoya-takeuchi@salesnow.jp",
+    "name": "SalesNow 竹内智康"
+  },
+  "subject": "[送信テスト] 8月6日セミナー営業 SendGrid接続確認",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "竹内様\n\n8月6日開催「Claude × Salesforce 活用大全」セミナー営業に使用するSendGrid接続のテストメールです。\n\nこのメールは営業対象企業への送信ではありません。\n受信を確認後、企業別の調査・文面レビューを通過した対象だけを段階的に送信します。\n"
+    }
+  ],
+  "categories": [
+    "seminar_20260806_claude_salesforce",
+    "connection_test"
+  ],
+  "custom_args": {
+    "campaign_id": "20260806_claude_salesforce",
+    "message_type": "connection_test"
+  }
+}

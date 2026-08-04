@@ -1,0 +1,9 @@
+SalesNowセミナー営業 進捗報告
+
+・SendGrid APIキー: adr-seminar-bdrローカル設定へ登録済み
+・SendGrid Mail Send API: 到達確認済み
+・Sender Identity: SalesNow ADR 竹内智康 / tomoya-takeuchi@salesnow.jp を作成
+・Sender Identity ID: 9466087
+・認証状態: 未認証（SendGrid確認メールのリンククリック待ち）
+・営業対象への実送信: 0件
+・次の作業: 送信元認証後に本人宛てテスト送信、Redash優先100社抽出、企業調査・個社文面作成

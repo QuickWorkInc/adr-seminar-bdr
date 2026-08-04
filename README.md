@@ -47,13 +47,22 @@ SalesNowで開催するセミナー集客におけるアウトバウンド営業
 
 ## SalesNowデータ / Redash
 
-Redash API Keyは秘匿値のためコミットしません。ローカルの `.env.local` に `REDASH_API_KEY` として保存します。
+`/adr-seminar-bdr` 配下の全プロジェクトでDBを参照する場合は、必ずRedash経由で接続します。DBへの直接接続は行いません。
+
+- Redash接続先: `https://redash.office.salesnow.jp/`
+- APIキーはユーザーがクリップボードへコピーし、実行時に直接 `Authorization: Key ...` ヘッダーへ渡す
+- APIキーの実値を画面、コマンド出力、Markdown、CSV、チャット、配信ログへ表示しない
+- APIキーをファイルへ保存しない（ユーザーが明示的に保存を依頼した場合を除く）
+- クリップボードが空の場合のみ、ユーザーへ再コピーを依頼する
+- 既存クエリ、データソース、スキーマの順に確認し、必要なデータを取得する
 
 ターゲティング、問い合わせフォーム探索、メールアドレス取得では、`seminar/salesnow-data-redash.md` の鉄の掟に従い、SalesNowデータをRedash経由で徹底利用します。
 
 ## Slack通知
 
 このリポジトリの `main` への変更は、`post-commit` hook からSlackへ通知します。親投稿には端的なタイトルと内容だけを書き、詳細はスレッドに送ります。
+
+営業キャンペーンの開始・30分ごとの中間進捗・完了報告も、リポジトリのローカルGit設定 `adr-seminar-bdr.slack-webhook-url` に保存した共通Webhookを使用します。Webhook実値は画面・ログ・Markdownへ表示せず、Git管理ファイルへコミットしません。
 
 Webhook URLやSendGrid API Keyは秘匿値のためコミットしません。ローカルでは次のどちらかで設定します。
 
@@ -76,7 +85,9 @@ SLACK_BOT_TOKEN=
 SLACK_CHANNEL_ID=
 ```
 
-SendGridを使う送信スクリプトは、`.env.local` の `SENDGRID_API_KEY` と `SENDGRID_API_KEY_ID` を参照します。Redashを使うデータ取得スクリプトは、`.env.local` の `REDASH_API_KEY` を参照します。
+メール送信はSendGridを使用します。SendGrid APIキーはリポジトリのローカルGit設定 `adr-seminar-bdr.sendgrid-api-key` に保存し、`/adr-seminar-bdr` 配下で共通利用します。APIキーの実値は画面、コマンド出力、Markdown、CSV、チャット、配信ログへ表示せず、Git管理ファイルへコミットしません。ローカル設定がない場合のみクリップボードから読み取ります。
+
+Redashを使うデータ取得スクリプトは、Redash用クリップボード認証手順を使用します。SendGridキーはローカルGit設定、Redashキーはクリップボードと認証経路を分離します。
 
 通知の親投稿は、人が把握しやすいように `タイトル + 変更ファイル数` のみにします。スレッドには、コミット、変更ファイル、変更サマリ、改変詳細diff、配信ログ正本スプレッドシートを送ります。Incoming Webhookのみの場合はSlack仕様上スレッドIDを取得できないため、親投稿だけ送ります。
 
