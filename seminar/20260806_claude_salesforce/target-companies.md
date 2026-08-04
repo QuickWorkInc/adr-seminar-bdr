@@ -45,8 +45,20 @@
 | アディッシュ株式会社 | 1010701029988 | info@adish.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
 | 株式会社サウンズグッド | 1011001062713 | info@sounds-good.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
 | イグニション・ポイント株式会社 | 1011001100423 | info@ignitionpoint-inc.com | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
+| 株式会社エヌデーデー | 1011201000828 | inquiry@nddhq.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
+| 株式会社アスカ | 1070001006063 | info@asuka-hu.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
+| 日精樹脂工業株式会社 | 1100001011530 | info@nisseijushi.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
+| 株式会社デジタルアイデンティティ | 1011001117178 | inquiry@digitalidentity.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
+| 富士テクノロジー株式会社 | 1080001012804 | info@fut.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
+| 株式会社シー・エス・ランバー | 1040001057646 | info@c-s-lumber.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
+| 株式会社フィールドサーブジャパン | 2010001091903 | info@field-serve.com | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
+| 株式会社トゥインクル | 1013401001399 | info@twk.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
 
-メール送信済み13社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。先行送信2社は送信後の再照合でも各0件。
+メール送信済み21社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。先行送信2社は送信後の再照合でも各0件。
+
+## フォーム未送信
+
+- 東京パワーテクノロジー株式会社: 公式フォームへ入力したが、送信ボタンのサイト側JavaScriptエラー（`sendProc is not defined`）により未送信。実績には未計上。
 
 ## 連絡先確認メモ
 
