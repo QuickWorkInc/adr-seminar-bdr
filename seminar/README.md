@@ -8,6 +8,7 @@
 
 - [セミナー管理シート](management-sheet.md)
 - [配信ログ正本スプレッドシート](delivery-log-sheet.md)
+- [SalesNowデータ / Redash活用ルール](salesnow-data-redash.md)
 
 ## 鉄の掟
 
@@ -27,6 +28,7 @@
 - 経営ベネフィットとP/Lインパクトを明示する
 - 根拠となるURL、資料、調査メモを残す
 - 配信ログは1配信につき1行で `delivery-log-sheet.md` のスプレッドシートへ集約する
+- ターゲティング、問い合わせフォーム探索、メールアドレス取得では `salesnow-data-redash.md` に従いSalesNowデータをRedash経由で徹底利用する
 
 ## 開催回フォルダ
 

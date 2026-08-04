@@ -34,15 +34,22 @@ SalesNowで開催するセミナー集客におけるアウトバウンド営業
 ## 必須ワークフロー
 
 1. `seminar/<開催ID>/brief.md` にセミナー情報を整理する
-2. 対象企業ごとに企業情報を調査し、根拠を `company-research/` に残す
-3. `brief.md` の未確定事項が消えるまで文面作成・送信を禁止する
-4. チャネル別に `email/` `contact/` `sns/` のルールを参照して文面を作る
-5. 企業ごとに `reviews/<company-slug>.md` へ上位モデルレビュー結果を残す
-6. `scripts/validate-repo.sh` で構成と必須ルールを確認する
-7. 実キャンペーン送信前は `bash scripts/validate-repo.sh --campaign seminar/<開催ID>` を通す
-8. 配信ログは1配信につき1行で `seminar/delivery-log-sheet.md` の正本スプレッドシートへ集約する
-9. 変更をコミットする
-10. コミット後はGitHubとSlackへ同期する
+2. Redash経由のSalesNowデータを使ってターゲティング、問い合わせフォームURL、メールアドレス候補を取得する
+3. 対象企業ごとに企業情報を調査し、根拠を `company-research/` に残す
+4. `brief.md` の未確定事項が消えるまで文面作成・送信を禁止する
+5. チャネル別に `email/` `contact/` `sns/` のルールを参照して文面を作る
+6. 企業ごとに `reviews/<company-slug>.md` へ上位モデルレビュー結果を残す
+7. `scripts/validate-repo.sh` で構成と必須ルールを確認する
+8. 実キャンペーン送信前は `bash scripts/validate-repo.sh --campaign seminar/<開催ID>` を通す
+9. 配信ログは1配信につき1行で `seminar/delivery-log-sheet.md` の正本スプレッドシートへ集約する
+10. 変更をコミットする
+11. コミット後はGitHubとSlackへ同期する
+
+## SalesNowデータ / Redash
+
+Redash API Keyは秘匿値のためコミットしません。ローカルの `.env.local` に `REDASH_API_KEY` として保存します。
+
+ターゲティング、問い合わせフォーム探索、メールアドレス取得では、`seminar/salesnow-data-redash.md` の鉄の掟に従い、SalesNowデータをRedash経由で徹底利用します。
 
 ## Slack通知
 
@@ -62,7 +69,7 @@ cp .env.example .env.local
 
 `.env.local` に `SLACK_WEBHOOK_URL` を設定します。
 
-SendGridを使う送信スクリプトは、`.env.local` の `SENDGRID_API_KEY` と `SENDGRID_API_KEY_ID` を参照します。
+SendGridを使う送信スクリプトは、`.env.local` の `SENDGRID_API_KEY` と `SENDGRID_API_KEY_ID` を参照します。Redashを使うデータ取得スクリプトは、`.env.local` の `REDASH_API_KEY` を参照します。
 
 通知には、コミット、変更ファイル、変更サマリ、改変詳細diff、配信ログ正本スプレッドシートを含めます。Incoming WebhookのみではSlackのスレッドIDを取得できないため、配信時にベースとして使ったメッセージ文章は `seminar/delivery-log-sheet.md` の正本スプレッドシートへ記録し、リポジトリ変更の改変履歴はSlack本文へ詳細通知します。
 

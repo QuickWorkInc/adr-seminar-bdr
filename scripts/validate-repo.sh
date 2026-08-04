@@ -6,6 +6,7 @@ required_paths=(
   ".githooks/post-commit"
   "seminar/README.md"
   "seminar/delivery-log-sheet.md"
+  "seminar/salesnow-data-redash.md"
   "seminar/20260804_claude_salesforce/README.md"
   "email/README.md"
   "contact/README.md"

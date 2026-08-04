@@ -2,6 +2,11 @@
 
 ## 2026-08-04
 
+### Redash API KeyとSalesNowデータ活用ルールを追加
+- **何を変えたか**: `.env.example` と `README.md` に `REDASH_API_KEY` / `REDASH_USAGE` の参照ルールを追加し、`seminar/salesnow-data-redash.md` にRedash経由でSalesNowデータを活用する鉄の掟を追加
+- **理由**: ターゲティング、問い合わせフォーム探索、メールアドレス取得でSalesNowデータを徹底利用し、根拠あるアウトバウンド配信にするため
+- **影響**: 実キーはコミットせず、ローカル `.env.local` のRedash API Keyをデータ取得スクリプトから常に利用できる
+
 ### SendGridローカル環境変数の参照を追加
 - **何を変えたか**: `.env.example` と `README.md` に `SENDGRID_API_KEY` / `SENDGRID_API_KEY_ID` の参照ルールを追加
 - **理由**: SendGridを使う送信スクリプトがローカルの `.env.local` から常に同じ環境変数名でAPIキーを読めるようにするため
