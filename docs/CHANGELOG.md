@@ -2,6 +2,11 @@
 
 ## 2026-08-04
 
+### 20260806 Claude / Salesforceセミナー作業フォルダを追加
+- **何を変えたか**: `seminar/20260806_claude_salesforce/` を追加し、brief、対象企業リスト、企業調査、文面、レビュー、配信ログ案内のテンプレートを整備
+- **理由**: 直近開催のセミナー集客を別ターミナル・別作業場所で即開始できるようにするため
+- **影響**: 親フォルダの鉄則、Redash / SalesNowデータ活用、企業別パーソナライズ、上位モデルレビュー、配信ログ正本シート記録を前提にした集客作業が可能になる
+
 ### Redash API KeyとSalesNowデータ活用ルールを追加
 - **何を変えたか**: `.env.example` と `README.md` に `REDASH_API_KEY` / `REDASH_USAGE` の参照ルールを追加し、`seminar/salesnow-data-redash.md` にRedash経由でSalesNowデータを活用する鉄の掟を追加
 - **理由**: ターゲティング、問い合わせフォーム探索、メールアドレス取得でSalesNowデータを徹底利用し、根拠あるアウトバウンド配信にするため

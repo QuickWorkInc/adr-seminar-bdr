@@ -49,3 +49,8 @@ seminar/<開催ID>/
   reviews/
   sent-log.md
 ```
+
+## 開催回一覧
+
+- `20260804_claude_salesforce`
+- `20260806_claude_salesforce`
