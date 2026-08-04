@@ -95,8 +95,30 @@
 | レバレジーズオフィスサポート株式会社 | 1011001117764 | info@leverages.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
 | 株式会社エクスプレス・エージェント | 1011101049973 | info@ex-agent.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
 | 株式会社スタッフシュウエイ | 1180001095079 | honsya@syuei.biz | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| アシストユー株式会社 | 1230001011848 | honsha@assist-y.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| エヌエス・テック株式会社 | 2020001016743 | info@nstec.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社アーデントスタッフ | 2020001024829 | info@ardent-staff.com | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社サンネット | 1240001012779 | info@csunnet.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社日立ソリューションズ東日本 | 1370001009911 | hse-info@hitachi-solutions.com | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社ユニバーサルコムピューターシステム | 2010001034705 | kikakubu@ucs.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社プロトコーポレーション | 2180001040422 | pdm@proto-g.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| トヨタコネクティッド株式会社 | 2180001049694 | info@mail.toyotaconnected.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社アルテニカ | 3010001152794 | info@artenica.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| キヤノン電子テクノロジー株式会社 | 3010401089133 | sales-info@canon-electec.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| モラブ阪神工業株式会社 | 2140001066982 | info_sin@morabu.com | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| エイム株式会社 | 2180001046790 | info@aim-info.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社ＲＫＫＣＳ | 2330001000063 | info@rkkcs.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社ＩＣ | 3010701001012 | info@ic-net.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| ＰＣＩソリューションズ株式会社 | 4010601043384 | info@pci-sol.com | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社ＮＴＴデータ・ニューソン | 4011001017375 | info_newson@newson.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 環境をサポートする株式会社きらめき | 1110001001720 | info@kirameki.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 同和興業株式会社 | 1370001009416 | info@dowa-kogya.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社東京ビル管理 | 2010001122071 | main@tokyobill.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| ビソー工業株式会社 | 2030001007106 | info@bisokougyou.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 光管財株式会社 | 3011801011339 | info@hikal.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社ビルシステム | 3020001047911 | info@buil-system.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
 
-メール送信済み62社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生。Batch 015は3社accepted後、SendGrid日次上限により22社を未送信として停止。詳細は各Batch結果を参照。
+メール送信済み84社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生。Batch 015は日次枠回復後の自動再開を含め25社すべてaccepted。
 
 ## フォーム未送信
 
@@ -120,4 +142,4 @@
 - 太平ビルサービス株式会社: 「お仕事や採用以外」の一般問い合わせフォームから送信し、`/contact/comp_etc.html` の完了画面を確認。公式ページに営業利用禁止の明示なし。
 - TISI株式会社: 公式の一般問い合わせフォームから送信し、`/contact/complete.php` の「問い合わせ完了」画面を確認。Redashの営業禁止・連絡先NGフラグはいずれも無効で、公式ページにも営業利用禁止の明示なし。
 
-メール送信済み62社、フォーム送信済み5社、ユニーク合計67社。
+メール送信済み84社、フォーム送信済み5社、ユニーク合計89社。

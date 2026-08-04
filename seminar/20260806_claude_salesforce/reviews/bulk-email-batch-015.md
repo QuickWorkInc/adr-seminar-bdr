@@ -8,3 +8,13 @@
 - exclusions: 契約顧客result `1123508`、既送信台帳、営業禁止・連絡先NG・倒産・非表示フラグを照合済み
 - channel_priority: メールを最優先。送信不能時のみRedash `contact_form` が存在する企業をフォーム候補化し、URLなしは対象外
 - slack: 個社通知なし。Batch完了時の集計1通のみ
+
+## 最終結果
+
+- initial_accepted: 3
+- initial_failed_daily_limit: 22
+- resumed_accepted: 22
+- final_email_accepted: 25
+- final_email_failed: 0
+- form_sent: 0（メール全件成功のためフォールバック不要）
+- completed_at: 2026-08-04T09:25:44Z
