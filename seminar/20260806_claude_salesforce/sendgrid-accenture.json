@@ -1,0 +1,10 @@
+{
+  "personalizations": [{"to": [{"email": "info.tokyo@accenture.com", "name": "アクセンチュア株式会社 ご担当者様"}]}],
+  "from": {"email": "tomoya-takeuchi@salesnow.jp", "name": "株式会社SalesNow 竹内智康"},
+  "reply_to": {"email": "tomoya-takeuchi@salesnow.jp", "name": "竹内智康"},
+  "subject": "Salesforce営業改革の現場実装10事例｜Claude活用ウェビナーのご案内",
+  "content": [{
+    "type": "text/plain",
+    "value": "ご担当者様\n\nお世話になっております。株式会社SalesNowの竹内と申します。\n\n貴社が32の提案センターと2,500人超の体制を統合し、Salesforceの単一基盤化やAIによる受注確率予測、生成AIによるRFP初稿作成の生産性向上を進められている事例を拝見しました。\n\n8月6日（木）13:00より、無料オンラインセミナー「Claude × Salesforce 活用大全──AI時代の営業生産性向上術」を開催します。\n\n受注率分析、データの名寄せ、レポート作成、失注商談の掘り起こしなど、営業データを「見る・動かす・任せる」の3段階で整理した10の活用法と弊社の実装事例をご紹介します。\n\n既に高度な営業改革を進める貴社には、個々の定型業務をClaudeへ委譲する具体的な設計例を、Salesforce変革や顧客支援の実装パターンと比較する機会としてご活用いただけます。提案・営業管理工数の削減と、失注案件からのパイプライン再創出を同時に検討できる内容です。\n\n▼無料・オンラインでのお申し込み\nhttps://salesnow.jp/seminars/52/?a=sn_form\n\n当日ご都合が合わない場合は、個別に30分ほどで同内容をご案内できます。\n今後このようなご案内が不要な場合は、本メールに「配信停止」とご返信ください。\n\n株式会社SalesNow\n竹内智康\n電話: 03-6844-1166\nメール: tomoya-takeuchi@salesnow.jp"
+  }]
+}

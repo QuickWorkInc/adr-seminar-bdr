@@ -28,6 +28,8 @@ fi
 redash_key="${redash_key//$'\r'/}"
 redash_key="${redash_key//$'\n'/}"
 redash_key="${redash_key//[[:space:]]/}"
+redash_key="${redash_key#Key}"
+redash_key="${redash_key#key}"
 redash_key="${redash_key#\"}"
 redash_key="${redash_key%\"}"
 redash_key="${redash_key#\'}"

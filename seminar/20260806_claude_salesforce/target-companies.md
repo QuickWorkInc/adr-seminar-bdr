@@ -28,6 +28,15 @@
 - テンプスタッフ・クリエイティブ株式会社（法人番号 7010401047319）: Redashの倒産フラグが有効
 - SalesNow既存顧客10社: 契約顧客リストとの照合で除外
 
+## メール送信済み
+
+| 企業名 | 法人番号 | 宛先 | Redash結果 | 送信結果 |
+|---|---|---|---|---|
+| フジアルテ株式会社 | 7120001035464 | info@fujiarte.co.jp | 1253255 | SendGrid accepted（2026-08-04） |
+| アクセンチュア株式会社 | 7010401001556 | info.tokyo@accenture.com | 1253255 | SendGrid accepted（2026-08-04） |
+
+両社とも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。
+
 ## 連絡先確認メモ
 
 - 株式会社スタッフサービス: `https://www.staffservice.co.jp/contact/contact.php?t=02` の一般質問フォームから送信し、完了画面を確認。営業利用禁止の明示なし。
