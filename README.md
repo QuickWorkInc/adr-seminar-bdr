@@ -48,7 +48,7 @@ SalesNowで開催するセミナー集客におけるアウトバウンド営業
 
 このリポジトリの `main` への変更は、`post-commit` hook からSlackへ全改変履歴を詳細通知します。
 
-Webhook URLは秘匿値のためコミットしません。ローカルでは次のどちらかで設定します。
+Webhook URLやSendGrid API Keyは秘匿値のためコミットしません。ローカルでは次のどちらかで設定します。
 
 ```bash
 git config --local adr-seminar-bdr.slack-webhook-url "<Slack Incoming Webhook URL>"
@@ -61,6 +61,8 @@ cp .env.example .env.local
 ```
 
 `.env.local` に `SLACK_WEBHOOK_URL` を設定します。
+
+SendGridを使う送信スクリプトは、`.env.local` の `SENDGRID_API_KEY` と `SENDGRID_API_KEY_ID` を参照します。
 
 通知には、コミット、変更ファイル、変更サマリ、改変詳細diff、配信ログ正本スプレッドシートを含めます。Incoming WebhookのみではSlackのスレッドIDを取得できないため、配信時にベースとして使ったメッセージ文章は `seminar/delivery-log-sheet.md` の正本スプレッドシートへ記録し、リポジトリ変更の改変履歴はSlack本文へ詳細通知します。
 
