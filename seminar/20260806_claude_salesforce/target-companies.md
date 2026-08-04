@@ -36,8 +36,9 @@
 | アクセンチュア株式会社 | 7010401001556 | info.tokyo@accenture.com | 1253255 | SendGrid accepted（2026-08-04） |
 | 株式会社ワークスタッフ | 7480001001711 | workstaff@ws-gp.co.jp | 1253255 | SendGrid accepted（2026-08-04） |
 | 株式会社インターネットイニシアティブ | 6010001011147 | info@iij.ad.jp | 1253272 | SendGrid accepted（2026-08-04） |
+| 株式会社NTTデータ・アイ | 2011101056358 | info@nttd-i.co.jp | 1253272 | SendGrid accepted（2026-08-04） |
 
-4社とも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。先行送信2社は送信後の再照合でも各0件。
+5社とも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。先行送信2社は送信後の再照合でも各0件。
 
 ## 連絡先確認メモ
 
