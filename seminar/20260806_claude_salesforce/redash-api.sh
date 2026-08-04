@@ -12,10 +12,15 @@ if [[ "$api_path" != /api/* ]]; then
   exit 2
 fi
 
-clipboard_value="$(pbpaste)"
-if [[ -z "$clipboard_value" ]]; then
-  print -u2 'error: clipboard does not contain an API key'
-  exit 2
+stored_key="$(git config --local --get adr-seminar-bdr.redash-api-key 2>/dev/null || true)"
+if [[ -n "$stored_key" ]]; then
+  clipboard_value="$stored_key"
+else
+  clipboard_value="$(pbpaste)"
+  if [[ -z "$clipboard_value" ]]; then
+    print -u2 'error: Redash API key is not configured'
+    exit 2
+  fi
 fi
 
 if [[ "$clipboard_value" == *"="* ]]; then

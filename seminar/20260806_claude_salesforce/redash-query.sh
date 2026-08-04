@@ -17,7 +17,12 @@ if [[ ! -f "$sql_file" ]]; then
   exit 2
 fi
 
-clipboard_value="$(pbpaste)"
+stored_key="$(git config --local --get adr-seminar-bdr.redash-api-key 2>/dev/null || true)"
+if [[ -n "$stored_key" ]]; then
+  clipboard_value="$stored_key"
+else
+  clipboard_value="$(pbpaste)"
+fi
 if [[ "$clipboard_value" == *"="* ]]; then
   redash_key="${clipboard_value#*=}"
 elif [[ "$clipboard_value" == *":"* ]]; then
@@ -35,7 +40,7 @@ redash_key="${redash_key%\"}"
 redash_key="${redash_key#\'}"
 redash_key="${redash_key%\'}"
 if [[ -z "$redash_key" ]]; then
-  print -u2 'error: clipboard does not contain an API key'
+  print -u2 'error: Redash API key is not configured'
   exit 2
 fi
 
