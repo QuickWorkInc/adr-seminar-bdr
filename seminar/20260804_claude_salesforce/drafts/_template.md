@@ -2,12 +2,17 @@
 
 - company_slug:
 - channel: email/contact/sns
+- 対象セミナー:
+- 配信セグメント:
+- 配信件数:
+- 配信手法:
 - company_research_path:
 - seminar_brief_path:
 - 企業固有の文脈:
 - セミナー内容との接続:
 - 経営ベネフィット:
 - P/Lインパクト:
+- ベースメッセージ:
 - draft:
 
 ## 送信前確認

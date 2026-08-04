@@ -40,8 +40,29 @@ SalesNowで開催するセミナー集客におけるアウトバウンド営業
 5. 企業ごとに `reviews/<company-slug>.md` へ上位モデルレビュー結果を残す
 6. `scripts/validate-repo.sh` で構成と必須ルールを確認する
 7. 実キャンペーン送信前は `bash scripts/validate-repo.sh --campaign seminar/<開催ID>` を通す
-8. 変更をコミットする
-9. コミット後はGitHubへ同期する
+8. 配信ログは1配信につき1行で `seminar/delivery-log-sheet.md` の正本スプレッドシートへ集約する
+9. 変更をコミットする
+10. コミット後はGitHubとSlackへ同期する
+
+## Slack通知
+
+このリポジトリの `main` への変更は、`post-commit` hook からSlackへ全改変履歴を詳細通知します。
+
+Webhook URLは秘匿値のためコミットしません。ローカルでは次のどちらかで設定します。
+
+```bash
+git config --local adr-seminar-bdr.slack-webhook-url "<Slack Incoming Webhook URL>"
+```
+
+または:
+
+```bash
+cp .env.example .env.local
+```
+
+`.env.local` に `SLACK_WEBHOOK_URL` を設定します。
+
+通知には、コミット、変更ファイル、変更サマリ、改変詳細diff、配信ログ正本スプレッドシートを含めます。Incoming WebhookのみではSlackのスレッドIDを取得できないため、配信時にベースとして使ったメッセージ文章は `seminar/delivery-log-sheet.md` の正本スプレッドシートへ記録し、リポジトリ変更の改変履歴はSlack本文へ詳細通知します。
 
 ## GitHub同期
 

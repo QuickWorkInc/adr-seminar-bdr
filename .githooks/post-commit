@@ -19,3 +19,8 @@ if ! git push -u origin HEAD:main; then
   echo "GitHub sync failed. Run: bash scripts/sync-to-github.sh" >&2
   exit 1
 fi
+
+if ! bash scripts/notify-slack.sh HEAD; then
+  echo "Slack notification failed. Run: bash scripts/notify-slack.sh HEAD" >&2
+  exit 1
+fi
