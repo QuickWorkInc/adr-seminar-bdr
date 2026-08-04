@@ -1,0 +1,23 @@
+corporate_number	company_name	middle_industry	email	contact_form	status
+1230001011848	アシストユー株式会社	人材派遣	honsha@assist-y.co.jp	https://www.haken-assistyou.com/inquiry	pending_form
+2020001016743	エヌエス・テック株式会社	人材派遣	info@nstec.co.jp	https://www.nstec.co.jp/FS-APL/FS-Form/form.cgi?Code=inquiry_3	pending_form
+2020001024829	株式会社アーデントスタッフ	人材派遣	info@ardent-staff.com	https://www.ardent-staff.com/contact/	pending_form
+1240001012779	株式会社サンネット	Webアプリ・サービス運営	info@csunnet.co.jp	https://www.csunnet.co.jp/form	pending_form
+1370001009911	株式会社日立ソリューションズ東日本	Webアプリ・サービス運営	hse-info@hitachi-solutions.com	https://www8.hitachi.co.jp/inquiry/general/form.jsp	pending_form
+2010001034705	株式会社ユニバーサルコムピューターシステム	Webアプリ・サービス運営	kikakubu@ucs.jp	https://www.ucs.jp/cprt/contact/	pending_form
+2180001040422	株式会社プロトコーポレーション	Webアプリ・サービス運営	pdm@proto-g.co.jp	https://www.proto-g.co.jp/inquiry_n/proto/	pending_form
+3010001152794	株式会社アルテニカ	Webアプリ・サービス運営	info@artenica.jp	https://artenica.jp/contact/	pending_form
+3010401089133	キヤノン電子テクノロジー株式会社	Webアプリ・サービス運営	sales-info@canon-electec.co.jp	https://ws.formzu.net/fgen/S54939560/	pending_form
+2140001066982	モラブ阪神工業株式会社	受託開発	info_sin@morabu.com	https://morabu.com/contact/	pending_form
+3010701001012	株式会社ＩＣ	受託開発	info@ic-net.co.jp	http://www.ic-net.co.jp/inquiry/service.html	pending_form
+4011001017375	株式会社ＮＴＴデータ・ニューソン	受託開発	info_newson@newson.co.jp	https://www.newson.co.jp/contact/	pending_form
+1110001001720	環境をサポートする株式会社きらめき	不動産管理	info@kirameki.co.jp	http://kirameki.co.jp/contact/	pending_form
+1370001009416	同和興業株式会社	不動産管理	info@dowa-kogya.co.jp	http://www.dowa-kogyo.co.jp/contact/	pending_form
+2010001122071	株式会社東京ビル管理	不動産管理	main@tokyobill.co.jp	https://tokyobill.securesite.jp/contact.html	pending_form
+3020001047911	株式会社ビルシステム	不動産管理	info@buil-system.co.jp	http://www.buil-system.co.jp/company/support/inquiry.html	pending_form
+2030001007106	ビソー工業株式会社	不動産管理	info@bisokougyou.co.jp		excluded_no_form_url
+2180001046790	エイム株式会社	受託開発	info@aim-info.co.jp		excluded_no_form_url
+2180001049694	トヨタコネクティッド株式会社	Webアプリ・サービス運営	info@mail.toyotaconnected.co.jp		excluded_no_form_url
+2330001000063	株式会社ＲＫＫＣＳ	受託開発	info@rkkcs.co.jp		excluded_no_form_url
+3011801011339	光管財株式会社	不動産管理	info@hikal.co.jp		excluded_no_form_url
+4010601043384	ＰＣＩソリューションズ株式会社	受託開発	info@pci-sol.com		excluded_no_form_url

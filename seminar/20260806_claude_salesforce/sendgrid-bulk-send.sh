@@ -110,6 +110,8 @@ https://salesnow.jp/seminars/52/?a=sn_outmail
     printf '%s\t%s\t%s\t%s\t%s\n' "$corporate_number" "$email" "$company_name" "${batch_file:t}" "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" >> "$ledger_file"
     jq -cn --arg company "$company_name" --arg email "$email" --arg message_id "$message_id" '{status:"accepted",company:$company,email:$email,message_id:$message_id}'
   else
-    jq -cn --arg company "$company_name" --arg email "$email" --arg code "$http_code" '{status:"failed",company:$company,email:$email,http_code:$code}'
+    error_message="$(jq -r '[.errors[]?.message] | join("; ")' "$response" 2>/dev/null || true)"
+    jq -cn --arg company "$company_name" --arg email "$email" --arg code "$http_code" --arg error "$error_message" \
+      '{status:"failed",company:$company,email:$email,http_code:$code,error:$error}'
   fi
 done

@@ -92,8 +92,11 @@
 | 株式会社第一ビルディング | 1010001065445 | info@dai-ichi-building.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 014） |
 | エンワールド・ジャパン株式会社 | 1010001070899 | marketing@enworld.com | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 014） |
 | ＮＴＴデータカスタマサービステクノロジ株式会社 | 1010601041837 | toiawase@tec-pw.com | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 014） |
+| レバレジーズオフィスサポート株式会社 | 1011001117764 | info@leverages.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社エクスプレス・エージェント | 1011101049973 | info@ex-agent.co.jp | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
+| 株式会社スタッフシュウエイ | 1180001095079 | honsya@syuei.biz | 1253375 | SendGrid accepted（2026-08-04、中業界別Batch 015） |
 
-メール送信済み59社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生し、実配送は11件。詳細と恒久対策は `sendgrid-duplicate-incident-20260804.md` を参照。
+メール送信済み62社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生。Batch 015は3社accepted後、SendGrid日次上限により22社を未送信として停止。詳細は各Batch結果を参照。
 
 ## フォーム未送信
 
@@ -117,4 +120,4 @@
 - 太平ビルサービス株式会社: 「お仕事や採用以外」の一般問い合わせフォームから送信し、`/contact/comp_etc.html` の完了画面を確認。公式ページに営業利用禁止の明示なし。
 - TISI株式会社: 公式の一般問い合わせフォームから送信し、`/contact/complete.php` の「問い合わせ完了」画面を確認。Redashの営業禁止・連絡先NGフラグはいずれも無効で、公式ページにも営業利用禁止の明示なし。
 
-メール送信済み59社、フォーム送信済み5社、ユニーク合計64社。
+メール送信済み62社、フォーム送信済み5社、ユニーク合計67社。
