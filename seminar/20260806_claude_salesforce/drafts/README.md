@@ -18,3 +18,5 @@
 - 経営ベネフィットがない
 - P/Lインパクトがない
 - 上位モデルレビューがない
+- メール文面の申込URLが `https://salesnow.jp/seminars/52/?a=sn_outmail` ではない
+- 問い合わせフォーム文面の申込URLが `https://salesnow.jp/seminars/52/?a=sn_form` ではない

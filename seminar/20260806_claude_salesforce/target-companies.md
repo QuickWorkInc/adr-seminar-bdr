@@ -37,8 +37,16 @@
 | 株式会社ワークスタッフ | 7480001001711 | workstaff@ws-gp.co.jp | 1253255 | SendGrid accepted（2026-08-04） |
 | 株式会社インターネットイニシアティブ | 6010001011147 | info@iij.ad.jp | 1253272 | SendGrid accepted（2026-08-04） |
 | 株式会社NTTデータ・アイ | 2011101056358 | info@nttd-i.co.jp | 1253272 | SendGrid accepted（2026-08-04） |
+| セントラルコンサルタント株式会社 | 1010001088264 | central@central-con.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
+| 株式会社クマヒラ | 1010001108872 | info@kumahira.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
+| 株式会社IIJグローバルソリューションズ | 1010001139901 | info@iijglobal.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
+| 株式会社Preferred Networks | 1010001159494 | pfn-info@preferred.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
+| 株式会社アイスタイル | 1010401057595 | istyle-info@istyle.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
+| アディッシュ株式会社 | 1010701029988 | info@adish.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
+| 株式会社サウンズグッド | 1011001062713 | info@sounds-good.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
+| イグニション・ポイント株式会社 | 1011001100423 | info@ignitionpoint-inc.com | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 001） |
 
-5社とも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。先行送信2社は送信後の再照合でも各0件。
+メール送信済み13社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。先行送信2社は送信後の再照合でも各0件。
 
 ## 連絡先確認メモ
 

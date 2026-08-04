@@ -18,7 +18,9 @@ jq -e '
   (.from.email == "tomoya-takeuchi@salesnow.jp") and
   (.reply_to.email == "tomoya-takeuchi@salesnow.jp") and
   (.subject | type == "string" and length > 0) and
-  (.content | type == "array" and length > 0)
+  (.content | type == "array" and length > 0) and
+  ([.content[].value] | join("\n") | contains("https://salesnow.jp/seminars/52/?a=sn_outmail")) and
+  ([.content[].value] | join("\n") | contains("https://salesnow.jp/seminars/52/?a=sn_form") | not)
 ' "$payload_file" >/dev/null || {
   print -u2 'error: payload validation failed'
   exit 1
