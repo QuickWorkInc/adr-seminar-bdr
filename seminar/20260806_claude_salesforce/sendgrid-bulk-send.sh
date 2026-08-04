@@ -17,11 +17,25 @@ mode="${2:-}"
 stored_key="$(git config --local --get adr-seminar-bdr.sendgrid-api-key 2>/dev/null || true)"
 [[ -n "$stored_key" ]] || { print -u2 'error: SendGrid API key is not configured'; exit 2; }
 
+script_dir="${0:A:h}"
+ledger_file="$script_dir/sent-email-ledger.tsv"
+lock_dir="$script_dir/.sendgrid-bulk-send.lock"
+if ! mkdir "$lock_dir" 2>/dev/null; then
+  print -u2 'error: another SendGrid bulk process is already running for this campaign'
+  exit 3
+fi
+trap 'rmdir "$lock_dir" 2>/dev/null || true' EXIT INT TERM
+
 tail -n +2 "$batch_file" | while IFS=$'\t' read -r corporate_number company_name email industry employees subject context benefit pl_impact source_url; do
   [[ -n "$email" && -n "$company_name" && -n "$context" && -n "$benefit" && -n "$pl_impact" ]] || {
     jq -cn --arg company "$company_name" --arg email "$email" '{status:"skipped",company:$company,email:$email,reason:"missing_required_field"}'
     continue
   }
+
+  if [[ -f "$ledger_file" ]] && awk -F $'\t' -v target="$email" 'NR > 1 && $2 == target { found=1 } END { exit !found }' "$ledger_file"; then
+    jq -cn --arg company "$company_name" --arg email "$email" '{status:"skipped",company:$company,email:$email,reason:"already_sent"}'
+    continue
+  fi
 
   suppressed=false
   for endpoint in bounces blocks spam_reports; do
@@ -93,6 +107,7 @@ https://salesnow.jp/seminars/52/?a=sn_outmail
     --data-binary "$payload" 'https://api.sendgrid.com/v3/mail/send')"
   if [[ "$http_code" == 202 ]]; then
     message_id="$(awk 'BEGIN{IGNORECASE=1} /^x-message-id:/ {gsub(/\r/,""); sub(/^[^:]+:[[:space:]]*/,""); print; exit}' "$headers")"
+    printf '%s\t%s\t%s\t%s\t%s\n' "$corporate_number" "$email" "$company_name" "${batch_file:t}" "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" >> "$ledger_file"
     jq -cn --arg company "$company_name" --arg email "$email" --arg message_id "$message_id" '{status:"accepted",company:$company,email:$email,message_id:$message_id}'
   else
     jq -cn --arg company "$company_name" --arg email "$email" --arg code "$http_code" '{status:"failed",company:$company,email:$email,http_code:$code}'

@@ -54,8 +54,16 @@
 | 株式会社シー・エス・ランバー | 1040001057646 | info@c-s-lumber.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
 | 株式会社フィールドサーブジャパン | 2010001091903 | info@field-serve.com | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
 | 株式会社トゥインクル | 1013401001399 | info@twk.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 002） |
+| 株式会社サーバーワークス | 1011101054073 | sales@serverworks.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 003） |
+| ジオマテック株式会社 | 1020001013421 | sales@geomatec.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 003） |
+| 株式会社カスタマーリレーションテレマーケティング | 1120001123274 | information@crtm.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 003） |
+| 株式会社ワークステーション | 1120001092585 | info@workstation.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 003、重複1通あり） |
+| 株式会社みどり会 | 1120001090457 | info@midorikai.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 003、重複1通あり） |
+| 三和エンジニアリング株式会社 | 1010001070040 | info@sanwa-e.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 003、重複1通あり） |
+| 株式会社コーユービジネス | 1120001079599 | mail@koyu.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 003） |
+| 東洋炭素株式会社 | 1120001050238 | info@toyotanso.co.jp | 1253283 | SendGrid accepted（2026-08-04、一斉Batch 003） |
 
-メール送信済み21社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。先行送信2社は送信後の再照合でも各0件。
+メール送信済み29社はいずれも契約顧客result `1123508`に該当せず、送信前のbounce・block・spam report・unsubscribeは0件。Batch 003ではプロセス重複により3社へ各1通の重複送信が発生し、実配送は11件。詳細と恒久対策は `sendgrid-duplicate-incident-20260804.md` を参照。
 
 ## フォーム未送信
 
