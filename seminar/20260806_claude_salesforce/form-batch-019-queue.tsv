@@ -26,16 +26,16 @@ corporate_number	company_name	small_industry	large_industry	employee_number	cont
 4130001030475	株式会社村田製作所	電子機器	機械	12789	http://www.murata.com/ja-jp/support/contact?intcid5=com_xxx_xxx_cmn_hd_xxx	http://www.murata.co.jp/	excluded_sales_prohibited
 4130001033271	株式会社ワールドプラン	人材派遣	人材・アウトソーシング	567	http://www.world-plan.co.jp/inquiry/	http://www.world-plan.co.jp/	excluded_unreachable
 4140001044672	神鋼テクノ株式会社	その他機械	機械	404	https://www.s-techno.co.jp/inquiry/index.html	https://www.s-techno.co.jp/outline/03.html	excluded_unreachable
-4140001049408	株式会社ベンカン機工	金属製品	材料・資源	415	http://benkankikoh.com/inquiry/web.html	https://www.benkankikoh.com/company/outline.html	pending
-4140001062427	ヒメジ理化株式会社	ガラス	材料・資源	652	http://www.himejirika.co.jp/ac_contuctus/index.html	http://www.himejirika.co.jp/	pending
-4140001070909	伊藤ハムミート販売西株式会社	食肉卵商社	商社	381	http://www.itoham.co.jp/contact/top.html	https://www.itoham-mhwest.com/	pending
-4140001072021	株式会社日本管財環境サービス	機械修理	機械	1598	http://www.nkks.co.jp/contact/	http://www.nkks.co.jp	pending
-4160001008709	株式会社文教スタヂオ	スタジオ・写真撮影	広告・制作	406	http://www.bunkyostudio.co.jp/contact/	http://www.bunkyostudio.co.jp/	pending
-4170001010192	アズビル金門エナジープロダクツ株式会社	計測機器・センサー	機械	417	https://akep.azbil.com/inquiry/index.html	https://akep.azbil.com/corporate/outline.html	pending
-4180001004210	株式会社マクシスエンジニアリング	産業用ロボット	機械	628	http://www.maxis-inc.com/contact/contact_top.html	http://www.maxis-inc.com	pending
-4180001006883	株式会社テクノ中部	電力・発電製造	機械	755	https://www.techno-chubu.co.jp/contact/	https://www.techno-chubu.co.jp/	pending
-4180001011487	株式会社ＡＳＡＨＩ　ＦＯＲＧＥ	動力装置	機械	696	http://www.asahiforge.co.jp/contact/	https://asahiforge.co.jp/plant/mino.html	pending
-4180001013764	山宗株式会社	その他専門商社	商社	615	https://www.yamaso.co.jp/outline/inquiry_form/recruit/	https://www.yamaso.co.jp/outline/company/	pending
+4140001049408	株式会社ベンカン機工	金属製品	材料・資源	415	http://benkankikoh.com/inquiry/web.html	https://www.benkankikoh.com/company/outline.html	excluded_required_address
+4140001062427	ヒメジ理化株式会社	ガラス	材料・資源	652	http://www.himejirika.co.jp/ac_contuctus/index.html	http://www.himejirika.co.jp/	excluded_required_address
+4140001070909	伊藤ハムミート販売西株式会社	食肉卵商社	商社	381	http://www.itoham.co.jp/contact/top.html	https://www.itoham-mhwest.com/	excluded_required_address
+4140001072021	株式会社日本管財環境サービス	機械修理	機械	1598	http://www.nkks.co.jp/contact/	http://www.nkks.co.jp	excluded_required_department
+4160001008709	株式会社文教スタヂオ	スタジオ・写真撮影	広告・制作	406	http://www.bunkyostudio.co.jp/contact/	http://www.bunkyostudio.co.jp/	sent_2026-08-05
+4170001010192	アズビル金門エナジープロダクツ株式会社	計測機器・センサー	機械	417	https://akep.azbil.com/inquiry/index.html	https://akep.azbil.com/corporate/outline.html	excluded_captcha
+4180001004210	株式会社マクシスエンジニアリング	産業用ロボット	機械	628	http://www.maxis-inc.com/contact/contact_top.html	http://www.maxis-inc.com	excluded_required_address
+4180001006883	株式会社テクノ中部	電力・発電製造	機械	755	https://www.techno-chubu.co.jp/contact/	https://www.techno-chubu.co.jp/	sent_2026-08-05
+4180001011487	株式会社ＡＳＡＨＩ　ＦＯＲＧＥ	動力装置	機械	696	http://www.asahiforge.co.jp/contact/	https://asahiforge.co.jp/plant/mino.html	excluded_required_address
+4180001013764	山宗株式会社	その他専門商社	商社	615	https://www.yamaso.co.jp/outline/inquiry_form/recruit/	https://www.yamaso.co.jp/outline/company/	excluded_wrong_channel
 4180001017641	株式会社トヨタシステムズ	Webアプリ・サービス運営	IT	2959	https://f.msgs.jp/webapp/form/17406_mtz_2/index.do?_ga=2.236907081.950064082.1560834766-180021496.1560834766	https://www.toyotasystems.com/company/location/	pending
 4180001022765	株式会社マキテック	産業用ロボット	機械	758	http://www.makitech.co.jp/support/form01.html	https://www.makitech.co.jp/company/gaiyo.html	pending
 4180001035346	株式会社キングコーポレーション	紙媒体印刷	広告・制作	632	https://www.king-corp.co.jp/touroku/touroku_form.php	https://www.king-corp.co.jp/company/	pending
