@@ -1,14 +1,14 @@
 corporate_number	company_name	middle_industry	large_industry	employees	contact_form	company_url	status
 1010001009823	アース環境サービス株式会社	業務請負	人材・アウトソーシング	1699	https://www.earth-kankyo.co.jp/contact/index.php/contact/input	https://www.earth-kankyo.co.jp/	pending_browser
 1010001012983	株式会社大塚商会	Webアプリ・サービス運営	IT	9198	https://mypage.otsuka-shokai.co.jp/contact?02=82_top-mypagewidget_contact	https://www.otsuka-shokai.co.jp/corporate/about/outline/	pending_browser
-1010001034565	株式会社ぐるなび	Webアプリ・サービス運営	IT	858	https://ssl.gnavi.co.jp/company/contact/?page=gri	https://corporate.gnavi.co.jp/profile/outline/	pending_browser
-1010001048061	株式会社センチュリーアンドカンパニー	人材派遣	人材・アウトソーシング	1712	https://www.century-and.co.jp/client/inquiry/	https://www.century-and.co.jp/company/about/	pending_browser
+1010001034565	株式会社ぐるなび	Webアプリ・サービス運営	IT	858	https://ssl.gnavi.co.jp/company/contact/?page=gri	https://corporate.gnavi.co.jp/profile/outline/	sent_2026-08-05
+1010001048061	株式会社センチュリーアンドカンパニー	人材派遣	人材・アウトソーシング	1712	https://www.century-and.co.jp/client/inquiry/	https://www.century-and.co.jp/company/about/	excluded_required_address
 1010001089262	株式会社プレステージ・インターナショナル	業務請負	人材・アウトソーシング	4475	https://www.prestigein.com/contact/	http://www.prestigein.com/index.html	pending_browser
 1010001118723	新日本コンピュータマネジメント株式会社	ITインフラストラクチャー	IT	389	https://www.scm-net.co.jp/form/	https://www.scm-net.co.jp/company/	pending_browser
-1010001130091	株式会社グッドワークコミュニケーションズ	業務請負	人材・アウトソーシング	592	https://www.goodworkcoms.co.jp/contact/index.html	https://www.goodworkcoms.co.jp/about/	pending_browser
+1010001130091	株式会社グッドワークコミュニケーションズ	業務請負	人材・アウトソーシング	592	https://www.goodworkcoms.co.jp/contact/index.html	https://www.goodworkcoms.co.jp/about/	excluded_captcha
 1010001145981	株式会社プライムアシスタンス	業務請負	人材・アウトソーシング	1121	https://prime-as.co.jp/contact.html	https://prime-as.co.jp/company/about/	pending_browser
 1010001160295	株式会社ＭＪテクノロジー	人材紹介	人材・アウトソーシング	409	http://www.mjt.jp/mjt/contact/	https://mjt.jp/about/outline/	pending_browser
-1010401014423	株式会社ジャパンテクニカルソフトウェア	Webアプリ・サービス運営	IT	626	https://www.jtsnet.co.jp/contact	https://www.jtsnet.co.jp/company/office/	pending_browser
+1010401014423	株式会社ジャパンテクニカルソフトウェア	Webアプリ・サービス運営	IT	626	https://www.jtsnet.co.jp/contact	https://www.jtsnet.co.jp/company/office/	sent_2026-08-05
 1010401016618	大東建託パートナーズ株式会社	不動産管理	不動産	4980	https://inquiry-web.kentaku-partners.com/?fr=99	http://www.kentaku-partners.com/	pending_browser
 1010401059022	オリックス・システム株式会社	Webアプリ・サービス運営	IT	387	https://www.orix.co.jp/grp/contact/	https://www.orix.co.jp/system/	pending_browser
 1010401063016	エムスリー株式会社	Webアプリ・サービス運営	IT	787	https://www.m3.com/inquiry/corporate/form.jsp?type=m3&amp;m=m3PR	https://corporate.m3.com/corporate	pending_browser
@@ -16,17 +16,17 @@ corporate_number	company_name	middle_industry	large_industry	employees	contact_f
 1010401091677	株式会社テクノプロ・コンストラクション	人材派遣	人材・アウトソーシング	3686	https://www.technopro-construction.com/contact/	https://www.technopro-construction.com/	pending_browser
 1010401146357	株式会社Ｗｏｒｋｓ　Ｈｕｍａｎ　Ｉｎｔｅｌｌｉｇｅｎｃｅ	受託開発	IT	1991	https://www.works-hi.co.jp/contact	https://www.works-hi.co.jp/corporate/information	pending_browser
 1010701016549	三菱総研ＤＣＳ株式会社	Webアプリ・サービス運営	IT	2585	https://dcs-q.secure.force.com/a/dcspage?pageid=a0C10000005ycpo	https://www.mitsubishi.com/ja/company/detail/202400004.html	pending_browser
-1010701021061	株式会社ランドコンピュータ	Webアプリ・サービス運営	IT	570	https://www.rand.co.jp/inquiry/form	https://www.rand.co.jp/corporate/access.php	pending_browser
+1010701021061	株式会社ランドコンピュータ	Webアプリ・サービス運営	IT	570	https://www.rand.co.jp/inquiry/form	https://www.rand.co.jp/corporate/access.php	sent_2026-08-05
 1010701023818	株式会社ニコンシステム	Webアプリ・サービス運営	IT	507	https://www.uw.nikon.com/form/nsi/contact/form-products.php	https://www.nsi.nikon.com/about/company.html	pending_browser
 1011001016099	トゥエンティファースト株式会社	人材派遣	人材・アウトソーシング	730	https://21tf.com/contact		pending_browser
 1011001035512	株式会社ＭＩＸＩ	Webアプリ・サービス運営	IT	1440	https://mixi.co.jp/inquiry/company/index.html	https://mixi.co.jp/	pending_browser
 1011001047359	東急ビジネスサポート株式会社	人材派遣	人材・アウトソーシング	485	https://www.tokyu-dept.co.jp/mail/mailform.jsp?fkey=hks	https://www.tokyu-bs.co.jp/corporate/access	pending_browser
-1011001058851	株式会社ロイヤリティマーケティング	クラウド系/SaaS/ASPサービス	IT	373	https://www.loyalty.co.jp/inquiry	https://www.loyalty.co.jp/	pending_browser
+1011001058851	株式会社ロイヤリティマーケティング	クラウド系/SaaS/ASPサービス	IT	373	https://www.loyalty.co.jp/inquiry	https://www.loyalty.co.jp/	sent_2026-08-05
 1011001109084	アルサーガパートナーズ株式会社	受託開発	IT	413	https://www.arsaga.jp/contact/	https://www.arsaga.jp/	pending_browser
-1011101000234	株式会社アイザワビルサービス	不動産管理	不動産	1207	http://www.aizawa-rm.co.jp/contact/index.php	http://www.aizawa-rm.co.jp	pending_browser
+1011101000234	株式会社アイザワビルサービス	不動産管理	不動産	1207	http://www.aizawa-rm.co.jp/contact/index.php	http://www.aizawa-rm.co.jp	excluded_hidden_required_control
 1011101015802	二幸産業株式会社	不動産管理	不動産	1231	http://www.nikoh-sng.co.jp/contact/index.html	https://nikoh-sng.co.jp/	pending_browser
 1011101025784	株式会社グローバルスタッフ	人材派遣	人材・アウトソーシング	580	https://www.globalstaff.co.jp/contact.html	https://www.globalstaff.co.jp/corporate/about.html	pending_browser
-1011101037739	株式会社早稲田大学アカデミックソリューション	業務請負	人材・アウトソーシング	425	https://company.w-as.jp/contact/	https://www.w-as.jp/	pending_browser
+1011101037739	株式会社早稲田大学アカデミックソリューション	業務請負	人材・アウトソーシング	425	https://company.w-as.jp/contact/	https://www.w-as.jp/	sent_2026-08-05
 1011101046616	株式会社ＮＳＤ	ITインフラストラクチャー	IT	3586	https://www.nsd.co.jp/inquiry/miscinfo_inq02.html	https://www.nsd.co.jp/corp/corp.html	pending_browser
 1011601010526	株式会社メッセ	人材派遣	人材・アウトソーシング	401	https://sv103.wadax.ne.jp/~mece-co-jp/mailform/contactus/index.html	https://mece.co.jp/company/	pending_browser
 1012801006446	キャストワン株式会社	人材派遣	人材・アウトソーシング	393	http://www.castone.co.jp/inquiry/	https://www.castone.co.jp/company.html	pending_browser
