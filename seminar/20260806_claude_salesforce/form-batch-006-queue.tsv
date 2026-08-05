@@ -27,10 +27,10 @@ corporate_number	company_name	middle_industry	large_industry	employees	contact_f
 1011101015802	二幸産業株式会社	不動産管理	不動産	1231	http://www.nikoh-sng.co.jp/contact/index.html	https://nikoh-sng.co.jp/	pending_browser
 1011101025784	株式会社グローバルスタッフ	人材派遣	人材・アウトソーシング	580	https://www.globalstaff.co.jp/contact.html	https://www.globalstaff.co.jp/corporate/about.html	pending_browser
 1011101037739	株式会社早稲田大学アカデミックソリューション	業務請負	人材・アウトソーシング	425	https://company.w-as.jp/contact/	https://www.w-as.jp/	sent_2026-08-05
-1011101046616	株式会社ＮＳＤ	ITインフラストラクチャー	IT	3586	https://www.nsd.co.jp/inquiry/miscinfo_inq02.html	https://www.nsd.co.jp/corp/corp.html	pending_browser
+1011101046616	株式会社ＮＳＤ	ITインフラストラクチャー	IT	3586	https://www.nsd.co.jp/inquiry/miscinfo_inq02.html	https://www.nsd.co.jp/corp/corp.html	excluded_disabled_consent
 1011601010526	株式会社メッセ	人材派遣	人材・アウトソーシング	401	https://sv103.wadax.ne.jp/~mece-co-jp/mailform/contactus/index.html	https://mece.co.jp/company/	pending_browser
 1012801006446	キャストワン株式会社	人材派遣	人材・アウトソーシング	393	http://www.castone.co.jp/inquiry/	https://www.castone.co.jp/company.html	pending_browser
-1020001028459	株式会社日立ソリューションズ・クリエイト	Webアプリ・サービス運営	IT	4173	https://www8.hitachi.co.jp/inquiry/hitachi-solutions-create/company/form_input.jsp	https://www.hitachi-solutions-create.co.jp/company/about/	pending_browser
+1020001028459	株式会社日立ソリューションズ・クリエイト	Webアプリ・サービス運営	IT	4173	https://www8.hitachi.co.jp/inquiry/hitachi-solutions-create/company/form_input.jsp	https://www.hitachi-solutions-create.co.jp/company/about/	sent_2026-08-05
 1021001048554	株式会社ホットスタッフ厚木	人材派遣	人材・アウトソーシング	587	https://www.hotstaff.co.jp/contact	https://www.hotstaff.co.jp/branch/detail/0924	pending_browser
 1060001005264	株式会社ティー・シー・シー	人材紹介	人材・アウトソーシング	1070	https://www.versas.jp/contact/	https://versas.jp/profile/profile.html	pending_browser
 1080001001575	株式会社サン	不動産管理	不動産	617	http://www.sun-sun-sun.co.jp/inquiry/	https://www.sun-sun-sun.co.jp/company/	pending_browser
