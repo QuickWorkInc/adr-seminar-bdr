@@ -18,7 +18,7 @@ corporate_number	company_name	middle_industry	large_industry	employees	contact_f
 1010701016549	三菱総研ＤＣＳ株式会社	Webアプリ・サービス運営	IT	2585	https://dcs-q.secure.force.com/a/dcspage?pageid=a0C10000005ycpo	https://www.mitsubishi.com/ja/company/detail/202400004.html	pending_browser
 1010701021061	株式会社ランドコンピュータ	Webアプリ・サービス運営	IT	570	https://www.rand.co.jp/inquiry/form	https://www.rand.co.jp/corporate/access.php	sent_2026-08-05
 1010701023818	株式会社ニコンシステム	Webアプリ・サービス運営	IT	507	https://www.uw.nikon.com/form/nsi/contact/form-products.php	https://www.nsi.nikon.com/about/company.html	pending_browser
-1011001016099	トゥエンティファースト株式会社	人材派遣	人材・アウトソーシング	730	https://21tf.com/contact		pending_browser
+1011001016099	トゥエンティファースト株式会社	人材派遣	人材・アウトソーシング	730	https://21tf.com/contact		sent_2026-08-05
 1011001035512	株式会社ＭＩＸＩ	Webアプリ・サービス運営	IT	1440	https://mixi.co.jp/inquiry/company/index.html	https://mixi.co.jp/	pending_browser
 1011001047359	東急ビジネスサポート株式会社	人材派遣	人材・アウトソーシング	485	https://www.tokyu-dept.co.jp/mail/mailform.jsp?fkey=hks	https://www.tokyu-bs.co.jp/corporate/access	pending_browser
 1011001058851	株式会社ロイヤリティマーケティング	クラウド系/SaaS/ASPサービス	IT	373	https://www.loyalty.co.jp/inquiry	https://www.loyalty.co.jp/	sent_2026-08-05
@@ -32,7 +32,7 @@ corporate_number	company_name	middle_industry	large_industry	employees	contact_f
 1012801006446	キャストワン株式会社	人材派遣	人材・アウトソーシング	393	http://www.castone.co.jp/inquiry/	https://www.castone.co.jp/company.html	excluded_unreachable
 1020001028459	株式会社日立ソリューションズ・クリエイト	Webアプリ・サービス運営	IT	4173	https://www8.hitachi.co.jp/inquiry/hitachi-solutions-create/company/form_input.jsp	https://www.hitachi-solutions-create.co.jp/company/about/	sent_2026-08-05
 1021001048554	株式会社ホットスタッフ厚木	人材派遣	人材・アウトソーシング	587	https://www.hotstaff.co.jp/contact	https://www.hotstaff.co.jp/branch/detail/0924	excluded_required_address
-1060001005264	株式会社ティー・シー・シー	人材紹介	人材・アウトソーシング	1070	https://www.versas.jp/contact/	https://versas.jp/profile/profile.html	pending_browser
+1060001005264	株式会社ティー・シー・シー	人材紹介	人材・アウトソーシング	1070	https://www.versas.jp/contact/	https://versas.jp/profile/profile.html	excluded_required_address
 1080001001575	株式会社サン	不動産管理	不動産	617	http://www.sun-sun-sun.co.jp/inquiry/	https://www.sun-sun-sun.co.jp/company/	sent_2026-08-05
 1120001056193	スミセイ情報システム株式会社	Webアプリ・サービス運営	IT	1466	https://www.slcs.co.jp/contact/index.html?solution	http://www.slcs.co.jp/	pending_browser
 1120001060014	朝日建物管理株式会社	不動産管理	不動産	733	http://asahitatemonokanri.co.jp/inquiry/	https://www.asahitatemonokanri.co.jp/company/outline.html	pending_browser
@@ -42,10 +42,10 @@ corporate_number	company_name	middle_industry	large_industry	employees	contact_f
 1120001111592	株式会社エクシードジャパン	人材派遣	人材・アウトソーシング	538	http://www.exceedjapan.co.jp/contact.html	http://www.exceedjapan.co.jp/	excluded_required_address
 1120001113985	株式会社アンフ・スタイル	人材派遣	人材・アウトソーシング	774	http://www.unf-style.com/html/contact.html	https://unf-style.com/	excluded_form_unavailable
 1180001031538	東海ソフト株式会社	ITインフラストラクチャー	IT	633	http://www.tokai-soft.co.jp/inquiry/	http://www.tokai-soft.co.jp/index.html	sent_2026-08-05
-1180001097728	名正運輸株式会社	業務請負	人材・アウトソーシング	668	https://www.meisho-unyu.co.jp/formmail/	http://www.meisho-unyu.co.jp/	pending_browser
-1180301023755	株式会社クオリティージャパン	業務請負	人材・アウトソーシング	862	https://quality-japan.jp/company/contact/index.html	https://quality-japan.jp/	pending_browser
+1180001097728	名正運輸株式会社	業務請負	人材・アウトソーシング	668	https://www.meisho-unyu.co.jp/formmail/	http://www.meisho-unyu.co.jp/	excluded_submit_stuck
+1180301023755	株式会社クオリティージャパン	業務請負	人材・アウトソーシング	862	https://quality-japan.jp/company/contact/index.html	https://quality-japan.jp/	excluded_url_prohibited
 1210001008573	株式会社ＡＬＬ　ＣＯＮＮＥＣＴ	Webアプリ・サービス運営	IT	408	http://www.all-connect.jp/contact/	https://all-connect.co.jp/company/about/	pending_browser
 1220001003912	太平ビルサービス株式会社	不動産管理	不動産	445	https://z303.secure.ne.jp/~z303104m04/contact/index.html	http://kanazawa.taihei-bs.co.jp/	pending_browser
-1290001012411	九州総合サービス株式会社	業務請負	人材・アウトソーシング	376	https://www.kyu-sou.co.jp/contact/	https://www.kyu-sou.co.jp/	pending_browser
+1290001012411	九州総合サービス株式会社	業務請負	人材・アウトソーシング	376	https://www.kyu-sou.co.jp/contact/	https://www.kyu-sou.co.jp/	excluded_submit_stuck
 1430001005061	株式会社クリーンコーポレーション	不動産管理	不動産	530	http://www.clean-corp.co.jp/contact/	http://clean-corp.co.jp/	pending_browser
 2010001004055	住友電工システムソリューション株式会社	Webアプリ・サービス運営	IT	379	http://www.seiss.co.jp/inquiry/qa_check.html	https://www.seiss.co.jp/company/profile.html	pending_browser
