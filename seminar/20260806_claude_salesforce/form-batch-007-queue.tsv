@@ -23,15 +23,15 @@ corporate_number	company_name	middle_industry	large_industry	employees	contact_f
 2011001114141	Ｈ．Ｒ．Ｉ株式会社	人材紹介	人材・アウトソーシング	427	https://hri-group.jp/contact	https://hri-group.co.jp/company	sent_2026-08-05
 2011101023151	キャリアリンク株式会社	業務請負	人材・アウトソーシング	6286	https://secure.careerlink.co.jp/form/inquiry/corporate/contact/?_ga=2.35375329.1927843505.1575870074-1890924258.1575870074	https://www.careerlink.co.jp/company/about	excluded_required_address
 2011101031419	株式会社ヒューマニック	人材派遣	人材・アウトソーシング	2875	https://www.humanic.co.jp/contact.html	https://www.humanic.co.jp/company/	excluded_required_address
-2011101042853	株式会社アクトプラス	人材派遣	人材・アウトソーシング	542	http://www.act-plus.co.jp/contact.html	https://www.act-plus.co.jp/company.html	pending_precheck
-2013201012843	株式会社ウィズ	人材派遣	人材・アウトソーシング	1069	https://job.kentakun.co.jp/contact/form.html	https://www.kentakun.co.jp/main/sub/corporate.html	pending_precheck
-2020001047904	株式会社ＷＯＷＯＷコミュニケーションズ	コールセンター	人材・アウトソーシング	783	https://www2.wowcom.co.jp/contactforms/view/contactForm/others/contactForm.html?te-uniquekey=15418e94970	https://www.wowcom.co.jp/	pending_precheck
-2021001014497	株式会社アルプスビジネスサービス	人材派遣	人材・アウトソーシング	674	http://www.jinzai-abs.co.jp/contactus/index.html	https://www.jinzai-abs.co.jp/corporate/	pending_precheck
-2030001004235	新日本ビルサービス株式会社	不動産管理	不動産	389	http://www.snb.co.jp/contact.php	https://www.snb.co.jp/company-info/	pending_precheck
-2040001057876	アドレス・サービス株式会社	コールセンター	人材・アウトソーシング	901	http://www.adservice.co.jp/contact.html	http://www.adservice.co.jp/	pending_precheck
-2040001081851	株式会社ＧＯＯＤ　ＳＭＩＬＥ	人材派遣	人材・アウトソーシング	472	http://gs-smile.com/cp-contact/	https://gs-smile.com/	pending_precheck
-2070001016771	株式会社両毛システムズ	Webアプリ・サービス運営	IT	879	https://www.ryomo.co.jp/form/contact/	http://www.ryomo.co.jp/	pending_precheck
-2080001005245	株式会社メンテックカンザイ	不動産管理	不動産	870	http://www.mentec-k.co.jp/contact/	https://www.mentec-k.co.jp/company/overview.html	pending_precheck
+2011101042853	株式会社アクトプラス	人材派遣	人材・アウトソーシング	542	http://www.act-plus.co.jp/contact.html	https://www.act-plus.co.jp/company.html	excluded_applicant_only
+2013201012843	株式会社ウィズ	人材派遣	人材・アウトソーシング	1069	https://job.kentakun.co.jp/contact/form.html	https://www.kentakun.co.jp/main/sub/corporate.html	excluded_applicant_only
+2020001047904	株式会社ＷＯＷＯＷコミュニケーションズ	コールセンター	人材・アウトソーシング	783	https://www2.wowcom.co.jp/contactforms/view/contactForm/others/contactForm.html?te-uniquekey=15418e94970	https://www.wowcom.co.jp/	excluded_required_address
+2021001014497	株式会社アルプスビジネスサービス	人材派遣	人材・アウトソーシング	674	http://www.jinzai-abs.co.jp/contactus/index.html	https://www.jinzai-abs.co.jp/corporate/	excluded_required_address
+2030001004235	新日本ビルサービス株式会社	不動産管理	不動産	389	http://www.snb.co.jp/contact.php	https://www.snb.co.jp/company-info/	excluded_required_address
+2040001057876	アドレス・サービス株式会社	コールセンター	人材・アウトソーシング	901	http://www.adservice.co.jp/contact.html	http://www.adservice.co.jp/	excluded_submit_stuck
+2040001081851	株式会社ＧＯＯＤ　ＳＭＩＬＥ	人材派遣	人材・アウトソーシング	472	http://gs-smile.com/cp-contact/	https://gs-smile.com/	excluded_no_form
+2070001016771	株式会社両毛システムズ	Webアプリ・サービス運営	IT	879	https://www.ryomo.co.jp/form/contact/	http://www.ryomo.co.jp/	excluded_wrong_channel
+2080001005245	株式会社メンテックカンザイ	不動産管理	不動産	870	http://www.mentec-k.co.jp/contact/	https://www.mentec-k.co.jp/company/overview.html	sent_2026-08-05
 2080001012662	株式会社ＢＲＥＸＡ　Ｎｅｘｔ	人材派遣	人材・アウトソーシング	17694	https://www.outsourcing.co.jp/contactus/	https://next.brexa.com/	pending_precheck
 2100001003411	株式会社インテージテクノスフィア	受託開発	IT	609	https://www.intage-technosphere.co.jp/contact/	http://www.intage-technosphere.co.jp/	pending_precheck
 2100001020984	セントラルソーシング株式会社	人材派遣	人材・アウトソーシング	386	http://c-sourcing.co.jp/contact/	http://c-sourcing.co.jp/	pending_precheck
