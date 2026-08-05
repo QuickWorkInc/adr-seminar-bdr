@@ -31,9 +31,9 @@ corporate_number	company_name	middle_industry	large_industry	employees	contact_f
 1011601010526	株式会社メッセ	人材派遣	人材・アウトソーシング	401	https://sv103.wadax.ne.jp/~mece-co-jp/mailform/contactus/index.html	https://mece.co.jp/company/	pending_browser
 1012801006446	キャストワン株式会社	人材派遣	人材・アウトソーシング	393	http://www.castone.co.jp/inquiry/	https://www.castone.co.jp/company.html	pending_browser
 1020001028459	株式会社日立ソリューションズ・クリエイト	Webアプリ・サービス運営	IT	4173	https://www8.hitachi.co.jp/inquiry/hitachi-solutions-create/company/form_input.jsp	https://www.hitachi-solutions-create.co.jp/company/about/	sent_2026-08-05
-1021001048554	株式会社ホットスタッフ厚木	人材派遣	人材・アウトソーシング	587	https://www.hotstaff.co.jp/contact	https://www.hotstaff.co.jp/branch/detail/0924	pending_browser
+1021001048554	株式会社ホットスタッフ厚木	人材派遣	人材・アウトソーシング	587	https://www.hotstaff.co.jp/contact	https://www.hotstaff.co.jp/branch/detail/0924	excluded_required_address
 1060001005264	株式会社ティー・シー・シー	人材紹介	人材・アウトソーシング	1070	https://www.versas.jp/contact/	https://versas.jp/profile/profile.html	pending_browser
-1080001001575	株式会社サン	不動産管理	不動産	617	http://www.sun-sun-sun.co.jp/inquiry/	https://www.sun-sun-sun.co.jp/company/	pending_browser
+1080001001575	株式会社サン	不動産管理	不動産	617	http://www.sun-sun-sun.co.jp/inquiry/	https://www.sun-sun-sun.co.jp/company/	sent_2026-08-05
 1120001056193	スミセイ情報システム株式会社	Webアプリ・サービス運営	IT	1466	https://www.slcs.co.jp/contact/index.html?solution	http://www.slcs.co.jp/	pending_browser
 1120001060014	朝日建物管理株式会社	不動産管理	不動産	733	http://asahitatemonokanri.co.jp/inquiry/	https://www.asahitatemonokanri.co.jp/company/outline.html	pending_browser
 1120001062472	株式会社パソナジョイナス	人材派遣	人材・アウトソーシング	990	https://www.kanden-jns.co.jp/contact/index.html	https://www.pasona-jns.co.jp/profile/outline/	pending_browser
