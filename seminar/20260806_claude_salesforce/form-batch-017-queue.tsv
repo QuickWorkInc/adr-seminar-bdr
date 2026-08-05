@@ -23,16 +23,16 @@ corporate_number	company_name	small_industry	large_industry	employee_number	cont
 4010401134301	株式会社ラキール	受託開発	IT	464	https://www.legendapl.com/contact/	https://www.lakeel.com/ja/company/about.html	excluded_unreachable
 4010401145975	株式会社ＮＳＦエンゲージメント	その他コンサル	コンサルティング	464	https://www.nsf-e.com/contact/	https://www.nsf-e.com	sent_2026-08-05
 4010402035069	キャップジェミニ株式会社	経営コンサル	コンサルティング	1322	https://www.capgemini.com/contact-us/	https://www.capgemini.com/jp-jp/about-us/	excluded_captcha
-4010501024971	株式会社シモジマ	紙・パルプ商社	商社	995	https://www.shimojima.co.jp/support/contact.html	https://www.shimojima.co.jp/aboutus/outline.html	pending_precheck
+4010501024971	株式会社シモジマ	紙・パルプ商社	商社	995	https://www.shimojima.co.jp/support/contact.html	https://www.shimojima.co.jp/aboutus/outline.html	sent_2026-08-05
 4010601021794	株式会社ＮＴＴデータＣＣＳ	ITインフラストラクチャー	IT	778	https://www.secure-cloud.jp/sf/1407473530twSPRkGi	https://www.nttdata-ccs.co.jp/company/outline.html	excluded_captcha
 4010601027156	ＪＫホールディングス株式会社	その他専門商社	商社	1755	http://www.jkhd.co.jp/contact/	https://www.jkhd.co.jp/common/profile	excluded_form_unavailable
 4010601027461	ウチダエスコ株式会社	Webアプリ・サービス運営	IT	633	https://www.esco.co.jp/contacts/info/?post_id=71	https://www.esco.co.jp/corporate/outline/	excluded_form_unavailable
-4010601029887	東武商事株式会社	ガス・燃料製品・採掘	エネルギー	391	https://tobu-es.co.jp/contact/oil/form.php	https://www.tobushoji.co.jp/company/	pending_precheck
+4010601029887	東武商事株式会社	ガス・燃料製品・採掘	エネルギー	391	https://tobu-es.co.jp/contact/oil/form.php	https://www.tobushoji.co.jp/company/	sent_2026-08-05
 4010601031604	株式会社ＩＨＩ	動力装置	機械	11162	https://contact.ihi.co.jp/index.php/ihi_jpn/IHI/form_10701	https://www.ihi.co.jp/company/offices/headquarters/	excluded_unreachable
 4010601032759	東京不動産管理株式会社	不動産管理	不動産	1027	https://secure3.e-state.ne.jp/etfk/contact/	https://www.etfk.jp/company/outline.html	excluded_unreachable
 4010601041041	ＳＧフィルダー株式会社	人材派遣	人材・アウトソーシング	9284	https://www.sg-fielder.co.jp/contact/input.php	https://www.sg-fielder.co.jp/company/about/	excluded_captcha
-4010701001606	株式会社ＮＴＣテクノロジー	ITインフラストラクチャー	IT	400	https://www.ntct.co.jp/contact/	https://www.ntct.co.jp/about_company-2/	pending_precheck
-4010701002678	株式会社キューブシステム	Webアプリ・サービス運営	IT	754	https://www.cubesystem.co.jp/contact/	https://www.cubesystem.co.jp/company/profile/	pending_precheck
+4010701001606	株式会社ＮＴＣテクノロジー	ITインフラストラクチャー	IT	400	https://www.ntct.co.jp/contact/	https://www.ntct.co.jp/about_company-2/	excluded_captcha
+4010701002678	株式会社キューブシステム	Webアプリ・サービス運営	IT	754	https://www.cubesystem.co.jp/contact/	https://www.cubesystem.co.jp/company/profile/	excluded_required_address
 4010701006398	株式会社寺岡製作所	接着剤	材料・資源	499	https://www.teraokatape.co.jp/inquiry/products_input.php	https://www.teraokatape.co.jp/	excluded_form_unavailable
 4010701013717	日軽金アクト株式会社	金属製品	材料・資源	758	http://group.nikkeikin.co.jp/contact/index.html	https://group.nikkeikin.co.jp/act/company/gaiyou.html	excluded_form_unavailable
 4010701026124	キヤノンビズアテンダ株式会社	業務請負	人材・アウトソーシング	806	https://mypage.canon-ba.co.jp/cba/Inquiry/form.aspx?type=corporate	http://www.canon-ba.co.jp/index.html	excluded_unreachable
@@ -42,10 +42,10 @@ corporate_number	company_name	small_industry	large_industry	employee_number	cont
 4010801012255	株式会社ＧＳユアサフィールディングス	電力・発電製造	機械	378	http://www.gs-yuasa.com/gyf/jp/inquiry/index.asp	https://www.gyf.gs-yuasa.jp/corporate/outline.php	excluded_form_unavailable
 4010801013170	株式会社キッツエスシーティー	その他製造	製造	514	https://kitz-sct.jp/contact/kitzsct/	http://kitz-sct.jp/	excluded_unreachable
 4011001004794	株式会社オーチュー	不動産管理	不動産	562	https://ohchu.sakura.ne.jp/inquiry/index.php	https://ohchu.co.jp/office.html	excluded_form_unavailable
-4011001005165	株式会社オリエンタルコンサルタンツ	土木コンサル	コンサルティング	1535	http://www.oriconsul.com/contact/	https://www.oriconsul.com/about/company.html	pending_precheck
+4011001005165	株式会社オリエンタルコンサルタンツ	土木コンサル	コンサルティング	1535	http://www.oriconsul.com/contact/	https://www.oriconsul.com/about/company.html	excluded_form_unavailable
 4011001071199	株式会社アットキャド	人材派遣	人材・アウトソーシング	2158	http://www.at-cad.co.jp/contact/	https://www.at-cad.co.jp/about/access.html	excluded_unreachable
-4011001073617	株式会社ギフティ	eコマース	IT	372	https://giftee.co.jp/contact/	https://giftee.co.jp/about/	pending_precheck
+4011001073617	株式会社ギフティ	eコマース	IT	372	https://giftee.co.jp/contact/	https://giftee.co.jp/about/	sent_2026-08-05
 4011001099067	スタイルファクトリー株式会社	人材派遣	人材・アウトソーシング	364	http://stylefact.co.jp/contact/business/	https://www.stylefact.co.jp/company.html	excluded_unreachable
 4011001113075	株式会社ＵＮＩＴＥＤ　ＰＲＯＤＵＣＴＩＯＮＳ	コンテンツ制作	広告・制作	503	https://wisenlarge.jp/contact/	https://united-p.co.jp/	excluded_wrong_channel
-4011101006162	アルティウスリンク株式会社	人材派遣	人材・アウトソーシング	34637	https://www.k-evolva.com/form/solution	https://www.altius-link.com/corporate/place/	pending_precheck
+4011101006162	アルティウスリンク株式会社	人材派遣	人材・アウトソーシング	34637	https://www.k-evolva.com/form/solution	https://www.altius-link.com/corporate/place/	excluded_wrong_channel
 4011101007805	住友林業レジデンシャル株式会社	不動産賃貸・仲介	不動産	385	https://www.sumirin-residential.co.jp/inquiry/form/	http://www.sumirin-residential.co.jp/	excluded_unreachable
