@@ -13,6 +13,7 @@ const queuePath = option("--queue");
 const ledgerPath = option("--ledger");
 const max = Number(option("--max", "1"));
 const submit = args.includes("--submit");
+const inspect = args.includes("--inspect");
 const endpoint = option("--endpoint", "http://127.0.0.1:9222");
 
 if (!queuePath || !ledgerPath) {
@@ -27,6 +28,13 @@ if (!Number.isInteger(max) || max < 1) {
 const now = () => new Date().toISOString();
 const appendLedger = (entry) => fs.appendFileSync(ledgerPath, `${JSON.stringify({ at: now(), ...entry })}\n`);
 const readJsonl = (file) => fs.readFileSync(file, "utf8").split("\n").filter(Boolean).map((line) => JSON.parse(line));
+const approvedMessage = (entry) => {
+  if (!entry.message_tsv) return undefined;
+  const [header, ...rows] = fs.readFileSync(entry.message_tsv, "utf8").trimEnd().split("\n").map((line) => line.split("\t"));
+  const idIndex = header.indexOf("corporate_number");
+  const messageIndex = header.indexOf("message");
+  return rows.find((row) => row[idIndex] === entry.id)?.[messageIndex];
+};
 const ensureParent = (file) => fs.mkdirSync(path.dirname(path.resolve(file)), { recursive: true });
 
 ensureParent(ledgerPath);
@@ -68,7 +76,16 @@ const fillField = async (page, field) => {
   const locator = page.locator(selector).first();
   if (await locator.count() === 0) throw new Error(`field_not_found:${selector}`);
   if (field.kind === "check") {
-    if (!(await locator.isChecked())) await locator.check({ timeout: 5_000 });
+    if (!(await locator.isChecked())) {
+      await locator.check({ timeout: 5_000 }).catch(async (error) => {
+        const id = await locator.getAttribute("id");
+        if (!id) throw error;
+        const label = page.locator(`label[for="${id}"]`).first();
+        if (await label.count() === 0) throw error;
+        await label.click({ timeout: 5_000 });
+      });
+      if (!(await locator.isChecked())) throw new Error(`field_not_checked:${selector}`);
+    }
   } else if (field.kind === "select") {
     await locator.selectOption({ label: field.value }).catch(async () => locator.selectOption(field.value));
   } else {
@@ -78,6 +95,7 @@ const fillField = async (page, field) => {
 
 for (const entry of candidates) {
   let page;
+  let submissionStarted = false;
   try {
     const context = browser.contexts()[0] ?? await browser.newContext();
     page = await context.newPage();
@@ -88,20 +106,52 @@ for (const entry of candidates) {
       await page.close();
       continue;
     }
-    for (const field of entry.fields ?? []) await fillField(page, field);
+    for (const field of entry.fields ?? []) {
+      const resolved = field.value === "__APPROVED_MESSAGE__" ? approvedMessage(entry) : field.value;
+      if (field.value === "__APPROVED_MESSAGE__" && !resolved) throw new Error("approved_message_not_found");
+      await fillField(page, { ...field, value: resolved });
+    }
     if (!submit) {
       appendLedger({ id: entry.id, company_name: entry.company_name, url: entry.url, status: "ready", note: "fields filled in dry-run; use --submit only after review" });
       console.log(`READY: ${entry.company_name}`);
       await page.close();
       continue;
     }
-    if (!entry.submit_selector) throw new Error("missing_submit_selector");
-    await page.locator(entry.submit_selector).first().click({ timeout: 10_000 });
-    await page.waitForTimeout(1_000);
+    const submitSteps = entry.submit_steps ?? (entry.submit_selector ? [entry.submit_selector] : []);
+    if (submitSteps.length === 0) throw new Error("missing_submit_selector");
+    for (const selector of submitSteps) {
+      const control = page.locator(selector).first();
+      if (await control.count() === 0) throw new Error(`submit_control_not_found:${selector}`);
+      await control.click({ timeout: 10_000 });
+      submissionStarted = true;
+      await page.waitForTimeout(1_000);
+      if (await recaptchaPresent(page)) break;
+    }
+    if (inspect) {
+      if (!entry.inspect_path) throw new Error("missing_inspect_path");
+      fs.writeFileSync(entry.inspect_path, await page.content());
+      appendLedger({ id: entry.id, company_name: entry.company_name, url: entry.url, status: "ready", note: `confirmation inspection captured: ${entry.inspect_path}` });
+      console.log(`INSPECTED: ${entry.company_name}`);
+      await page.close();
+      continue;
+    }
+    if (entry.confirm_selector) {
+      if (await recaptchaPresent(page)) {
+        appendLedger({ id: entry.id, company_name: entry.company_name, url: entry.url, status: "hold_recaptcha", note: "reCAPTCHA appeared on confirmation page; no final submission attempted" });
+        console.log(`HOLD reCAPTCHA: ${entry.company_name}`);
+        await page.close();
+        continue;
+      }
+      await page.locator(entry.confirm_selector).first().click({ timeout: 10_000 });
+      await page.waitForTimeout(1_000);
+    }
     if (await recaptchaPresent(page)) {
       appendLedger({ id: entry.id, company_name: entry.company_name, url: entry.url, status: "hold_recaptcha", note: "reCAPTCHA appeared after form fill; no submission confirmed" });
       console.log(`HOLD reCAPTCHA: ${entry.company_name}`);
-    } else if (entry.success_selector && await page.locator(entry.success_selector).first().isVisible({ timeout: 5_000 }).catch(() => false)) {
+    } else if (
+      (entry.success_selector && await page.locator(entry.success_selector).first().isVisible({ timeout: 5_000 }).catch(() => false)) ||
+      (entry.success_url && page.url().includes(entry.success_url))
+    ) {
       appendLedger({ id: entry.id, company_name: entry.company_name, url: entry.url, status: "sent", note: "completion selector verified" });
       console.log(`SENT: ${entry.company_name}`);
     } else {
@@ -111,7 +161,13 @@ for (const entry of candidates) {
     await page.close();
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    const status = /Timeout|timeout|ECONNREFUSED|Target page, context or browser has been closed/.test(message) ? "hold_timeout" : "skipped";
+    const status = submissionStarted
+      ? "hold_unconfirmed"
+      : /Chrome connection unavailable|ECONNREFUSED|connectOverCDP|page\.goto: Timeout|Target page, context or browser has been closed/.test(message)
+        ? "hold_timeout"
+        : /Timeout|timeout/.test(message)
+          ? "hold_unconfirmed"
+          : "skipped";
     appendLedger({ id: entry.id, company_name: entry.company_name, url: entry.url, status, note: message });
     console.log(`${status.toUpperCase()}: ${entry.company_name} (${message})`);
     if (page && !page.isClosed()) await page.close().catch(() => {});

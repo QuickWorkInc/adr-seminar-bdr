@@ -11,7 +11,17 @@ npm install
 ./install-launch-agent.sh
 ```
 
-専用Chromeウィンドウが開きます。送信に必要なログインがある場合だけ、この専用ウィンドウでログインします。普段使いのChromeプロファイルとは分離され、プロファイルは`~/.form-runner/chrome-profile`に保存されます。
+既定ではヘッドレス（画面なし）で起動するため、フォーム操作中にChromeウィンドウが前面に出ることはありません。普段使いのChromeプロファイルとは分離され、プロファイルは`~/.form-runner/chrome-profile`に保存されます。
+
+ログインが必要な場合だけ、いったん画面付きで起動します。
+
+```zsh
+./stop-dedicated-chrome.sh
+FORM_RUNNER_HEADLESS=0 ./start-dedicated-chrome.sh
+# 専用Chromeでログイン後
+./stop-dedicated-chrome.sh
+./start-dedicated-chrome.sh
+```
 
 `install-launch-agent.sh`は、ログイン時および60秒ごとに専用Chromeの稼働を確認します。Chromeが終了しても次回チェックで再起動します。停止する場合は`launchctl bootout gui/$(id -u)/com.salesnow.form-runner.chrome`を実行します。
 
@@ -31,7 +41,14 @@ npm run run -- --queue /path/to/queue.jsonl --ledger /path/to/ledger.jsonl --max
 
 # 承認済みキューを送信
 npm run run -- --queue /path/to/queue.jsonl --ledger /path/to/ledger.jsonl --max 10 --submit
+
+# 「入力内容確認」後の画面を確認用に保存する（最終送信は行わない）
+npm run run -- --queue /path/to/queue.jsonl --ledger /path/to/ledger.jsonl --max 1 --submit --inspect
 ```
+
+確認画面があるフォームは、`confirm_selector`に確認画面の最終送信ボタンを指定します。ランナーはreCAPTCHAを再確認してからそのボタンを押し、`success_selector`で完了を確認します。
+
+確認画面の仕様が未確定な場合は、キューに`inspect_path`を設定して`--inspect`を実行できます。初段の「入力内容確認」まで進めたHTMLを保存し、最終送信は行いません。保存内容から`confirm_selector`と`success_selector`を確認してから通常の`--submit`を行います。
 
 台帳に`sent`、`hold_recaptcha`、`hold_timeout`、`hold_unconfirmed`、`skipped`を都度記録します。次回実行時、これらのIDは再送しません。
 

@@ -6,6 +6,7 @@ chrome_profile="$runner_root/chrome-profile"
 chrome_log="$runner_root/chrome.log"
 caffeinate_pid_file="$runner_root/caffeinate.pid"
 debug_port="${FORM_RUNNER_DEBUG_PORT:-9222}"
+headless_mode="${FORM_RUNNER_HEADLESS:-1}"
 chrome_app="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 if [[ ! -x "$chrome_app" ]]; then
@@ -30,6 +31,11 @@ else
   print -r -- "$!" >"$caffeinate_pid_file"
 fi
 
+chrome_mode_args=()
+if [[ "$headless_mode" == "1" ]]; then
+  chrome_mode_args+=(--headless=new --disable-gpu)
+fi
+
 # `open -na` detaches the macOS application from this short-lived launcher.
 # This matters when the launcher is managed by launchd: direct child processes
 # can otherwise be terminated when the launcher exits.
@@ -39,12 +45,17 @@ nohup /usr/bin/open -na "Google Chrome" --args \
   --user-data-dir="$chrome_profile" \
   --no-first-run \
   --no-default-browser-check \
+  "${chrome_mode_args[@]}" \
   >>"$chrome_log" 2>&1 &
 
 for _ in {1..20}; do
   if curl --silent --fail "http://127.0.0.1:${debug_port}/json/version" >/dev/null 2>&1; then
     print "Form runner Chrome started on port ${debug_port}."
-    print "Complete any required logins in the dedicated Chrome window, then run the queue."
+    if [[ "$headless_mode" == "1" ]]; then
+      print "Form runner Chrome is running headlessly and will not take window focus."
+    else
+      print "Complete any required logins in the dedicated Chrome window, then restart in headless mode."
+    fi
     exit 0
   fi
   sleep 1
