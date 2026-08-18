@@ -1,21 +1,28 @@
 # SalesNowデータ / Redash活用ルール
 
-SalesNowデータにアクセスするRedash API Keyは、ローカルの `.env.local` に `REDASH_API_KEY` として保存します。実キーをリポジトリにコミットすることは禁止です。
+SalesNowデータにアクセスするRedash API Keyは、リポジトリ限定のローカルGit設定 `adr-seminar-bdr.redash-api-key` に保存します。実キーをリポジトリにコミットすることは禁止です。
 
 ## 鉄の掟
 
 - ターゲティング、問い合わせフォーム探索、メールアドレス取得では、SalesNowデータをRedash経由で徹底利用する
 - 対象企業リスト、配信セグメント、企業情報、問い合わせフォームURL、メールアドレス候補は、可能な限りSalesNowデータで裏取りする
 - Redashから取得した情報を使った場合は、配信ログ正本スプレッドシートの `送信根拠` または `備考` にRedash利用を記録する
-- `REDASH_API_KEY` は `.env.local` だけに保存し、README、Markdown、CSV、Slack、GitHubに貼り付けない
+- APIキーはローカルGit設定だけに保存し、README、Markdown、CSV、Slack、GitHubに貼り付けない
 - SalesNowデータ全体にアクセスできるキーとして扱い、不要な外部共有やスクリーンショット掲載を禁止する
 
-## ローカル環境変数
+## 共通クライアント
 
-```bash
-REDASH_API_KEY=
-REDASH_USAGE=
+すべてのセッションは、環境変数・クリップボード・独自の`curl`を直接使わず、リポジトリの共通クライアントを使う。
+
+```zsh
+# 認証状態の確認（認証情報は出力しない）
+./seminar/redash-doctor.sh
+
+# Redash APIの読み取り
+./seminar/redash-api.sh /api/data_sources
 ```
+
+共通クライアントはローカルGit設定を優先し、未設定時だけクリップボードを利用する。別のCodexセッションでも同じリポジトリを開いていれば、同じ設定を利用できる。
 
 ## DBアクセス手順
 
@@ -26,7 +33,7 @@ REDASH_USAGE=
 3. 実行時は保存済みキーを優先し、未設定時のみクリップボードから読み取ってRedash APIの `Authorization: Key ...` ヘッダーへ渡す
 4. APIキーの実値をコマンド出力、Markdown、CSV、チャット、配信ログへ表示しない
 5. ユーザーが保存を明示的に依頼した場合のみ、リポジトリ限定のローカルGit設定へ保存する（GitHubへコミットしない）
-6. クリップボードが空の場合のみ、ユーザーへAPIキーの再コピーを依頼する
+6. 共通クライアントで認証確認に失敗し、ローカルGit設定も未設定の場合のみ、ユーザーへAPIキーの再コピーを依頼する
 
 APIキーに十分な権限がある場合は、Redash APIからクエリ一覧・データソース・スキーマを確認し、目的に合う既存クエリを優先して利用します。
 
