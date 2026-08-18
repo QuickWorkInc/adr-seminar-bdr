@@ -1,0 +1,12 @@
+{
+  "name": "salesnow-form-runner",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start-chrome": "./start-dedicated-chrome.sh",
+    "run": "node form-runner.mjs"
+  },
+  "dependencies": {
+    "playwright-core": "^1.58.0"
+  }
+}

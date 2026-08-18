@@ -1,0 +1,15 @@
+{
+  "personalizations": [
+    {"to": [{"email": "Japan.Consulting@gartner.com", "name": "ガートナージャパン株式会社 ご担当者様"}]},
+    {"to": [{"email": "info@ncs-co.jp", "name": "株式会社CONSCIENCE ご担当者様"}]}
+  ],
+  "from": {"email": "tomoya-takeuchi@salesnow.jp", "name": "株式会社SalesNow 竹内智康"},
+  "reply_to": {"email": "tomoya-takeuchi@salesnow.jp", "name": "竹内智康"},
+  "subject": "【明日開催／ITコンサル向け】営業投資のROIを高めるターゲット戦略",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "お世話になっております。\nSalesNowの竹内と申します。\n\nITコンサルティング業界では、DX・基幹刷新・AI活用などの投資兆候を早期に捉え、高確度企業へコンサルタントと営業工数を集中させることが、案件化率と稼働生産性の両面で重要になっています。\n\n今回、営業・マーケティングの投資対効果を最大化し、ターゲット選定と提案活動の生産性を高める具体的な方法を30分でご紹介します。\n\n▼ お申し込みはこちらです\nhttps://salesnow.jp/seminars/50/?a=sn_outmail\n\n日時　2026年8月5日（水）13:00〜13:30\n形式　オンライン（Zoom）\n費用　無料\n\n当日ご都合が合わない場合は個別でも同じ内容をお伝えできます。\n30分ほどお時間をいただけますと幸いです。\n\nご確認よろしくお願いいたします。\n\n※今後のご案内が不要な場合は、本メールへの返信でお知らせください。\n\n====================================\n株式会社SalesNow\n竹内智康（たけうちともや）\n電話番号：03-6844-1166\nメールアドレス：tomoya-takeuchi@salesnow.jp\n===================================="
+    }
+  ]
+}
